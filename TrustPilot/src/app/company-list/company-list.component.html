@@ -1,0 +1,12 @@
+
+<ul>
+ <li *ngFor="let company of companies">
+   Company: {{company.name}}, rating: {{company.rating}}
+
+   <button type="button" (click)="addCompany(company)">Add company</button>
+
+ </li>
+</ul>
+
+
+
