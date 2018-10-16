@@ -8,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class CompanyListComponent implements OnInit {
 
   public companies = [
-    {name: 'EA', rating: 1},
-    {name: 'MBRose', rating: 5}
+    {name: 'EA', rating: '1'},
+    {name: 'MBRose', rating: '5'}
   ];
 
-  public addCompany(company: {name: string; rating: number}) {
+  public addCompany(company: {name: string; rating: string}) {
     this.companies.push(company);
   }
 

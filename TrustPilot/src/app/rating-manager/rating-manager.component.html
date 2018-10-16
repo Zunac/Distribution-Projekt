@@ -1,5 +1,19 @@
+<h4>Add a new company</h4>
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">Company name</label>
+    <input type="text" id="fname" name="name" placeholder="The name of the company...">
+
+    <label for="lname">Rating</label>
+    <input type="text" id="lname" name="lastname" placeholder="Please write a rating...">
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
 #1 star rating
-<span *ngIf="rating <= 1">
+<span *ngIf="rating <= '1'">
   <span class="fa fa-star checked"></span>
 <span class="fa fa-star"></span>
 <span class="fa fa-star"></span>
@@ -8,7 +22,7 @@
 </span>
 
 #2 star rating
-<span *ngIf="rating <= 1">
+<span *ngIf="rating <= '2'">
   <span class="fa fa-star checked"></span>
 <span class="fa fa-star"></span>
 <span class="fa fa-star"></span>
@@ -17,7 +31,7 @@
 </span>
 
 #3 star rating
-<span *ngIf="rating <= 1">
+<span *ngIf="rating <= '3'">
   <span class="fa fa-star checked"></span>
 <span class="fa fa-star"></span>
 <span class="fa fa-star"></span>
@@ -26,7 +40,7 @@
 </span>
 
 #4 star rating
-<span *ngIf="rating <= 1">
+<span *ngIf="rating <= '4'">
   <span class="fa fa-star checked"></span>
 <span class="fa fa-star"></span>
 <span class="fa fa-star"></span>
@@ -35,13 +49,15 @@
 </span>
 
 #5 star rating
-<span *ngIf="rating <= 1">
+<span *ngIf="rating <= '5'">
   <span class="fa fa-star checked"></span>
 <span class="fa fa-star"></span>
 <span class="fa fa-star"></span>
 <span class="fa fa-star"></span>
 <span class="fa fa-star"></span>
 </span>
+
+
 
 
 

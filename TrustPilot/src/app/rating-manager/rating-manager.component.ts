@@ -6,7 +6,16 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./rating-manager.component.css']
 })
 export class RatingManagerComponent implements OnInit {
-  @Input() public rating: number;
+  @Input() public rating: string = '';
+
+
+
+  onKey(event: any){
+    this.rating += event.target.value();
+  }
+
+
+
 
   constructor() { }
 
