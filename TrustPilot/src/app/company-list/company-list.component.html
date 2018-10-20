@@ -1,0 +1,27 @@
+
+<ul>
+ <li *ngFor="let company of companies">
+   Company: {{company.name}}, rating: {{company.rating}}
+   <button type="button" (click)="addCompany(company)">Add company</button>
+
+ </li>
+</ul>
+
+<h4>Add a new company</h4>
+
+
+
+
+<div>
+    <label for="comname">Company name</label>
+    <input type="text" id="comname" name="company_name" placeholder="The name of the company...">
+
+    <label for="rating">Rating</label>
+    <input type="text" id="rating" name="rating" placeholder="Please write a rating...">
+
+
+
+</div>
+
+
+
