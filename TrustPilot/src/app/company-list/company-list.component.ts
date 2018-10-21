@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-company-list',
@@ -6,15 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./company-list.component.css']
 })
 export class CompanyListComponent implements OnInit {
-  company: Company;
+  @Input() public company_name: string;
+  @Input() public rating: string;
+  @Output() public list_company_name = new EventEmitter<string>();
+  @Output() public list_rating = new EventEmitter<string>();
+
+
+
+
+
   public companies = [
-    {name: 'EA', rating: '1'},
-    {name: 'MBRose', rating: '5'}
+    {company_name: 'EA', rating: '1'},
+    {company_name: 'MBRose', rating: '5'}
   ];
 
 
-  public addCompany(company: {name: string; rating: string}) {
-    this.companies.push(company);
+  public addCompany(company_name: string, rating: string) {
+    this.companies.push(new Company(company_name, rating));
   }
 
   constructor() { }
