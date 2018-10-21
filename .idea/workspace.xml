@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d4deec8e-c5cc-4973-a13c-01e3d1b4de52" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrustPilot/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrustPilot/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrustPilot/src/app/rating-manager/rating-manager.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrustPilot/src/app/rating-manager/rating-manager.component.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,11 +19,11 @@
     <session id="-1421924182">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -44,32 +42,32 @@
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="Angular2LanguageService" value="4" />
+          <entry key="Angular2LanguageService" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="31" />
-          <entry key="html" value="876" />
-          <entry key="ts" value="807" />
+          <entry key="html" value="1443" />
+          <entry key="ts" value="1098" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="31" />
-          <entry key="HTML" value="876" />
-          <entry key="TypeScript" value="807" />
+          <entry key="HTML" value="1443" />
+          <entry key="TypeScript" value="1098" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="357">
+              <caret line="21" column="57" lean-forward="true" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -112,16 +110,16 @@
         <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/app.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+            <state relative-caret-position="51">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -171,8 +169,8 @@
         <option value="$PROJECT_DIR$/TrustPilot/src/app/rating-manager/rating-manager.component.css" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/rating-manager/rating-manager.component.html" />
-        <option value="$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.html" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.ts" />
+        <option value="$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.html" />
       </list>
     </option>
   </component>
@@ -192,7 +190,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="974" />
+    <option name="width" value="975" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
@@ -200,7 +198,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -246,6 +243,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -279,18 +277,19 @@
       <workItem from="1539687861843" duration="6266000" />
       <workItem from="1539706136026" duration="15000" />
       <workItem from="1539708941737" duration="1982000" />
-      <workItem from="1540028741592" duration="3806000" />
+      <workItem from="1540028741592" duration="4371000" />
+      <workItem from="1540117589674" duration="4454000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12069000" />
+    <option name="totallyTimeSpent" value="17088000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-7" y="0" width="975" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36324787" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3628602" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -341,12 +340,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/rating-manager/rating-manager.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/rating-manager/rating-manager.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/rating-manager/rating-manager.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
             <element signature="e#0#73#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
@@ -366,23 +382,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/rating-manager/rating-manager.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/rating-manager/rating-manager.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -392,17 +391,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.html">
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.ts">
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+        <state relative-caret-position="357">
+          <caret line="21" column="57" lean-forward="true" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
         </state>
       </provider>
     </entry>
