@@ -1,16 +1,10 @@
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.topNav {
   overflow: hidden;
   background-color: #333;
 }
 
-li {
+.topNav a {
   float: left;
-}
-
-li a {
   display: block;
   color: white;
   text-align: center;
@@ -18,7 +12,18 @@ li a {
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
+.topNav a:hover {
+  background-color: black;
+}
+
+.topNav a:focus {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.searchNav {
+  float: right;
+  display: block;
+  margin-right: 20px;
+  margin-top: 10px
 }
