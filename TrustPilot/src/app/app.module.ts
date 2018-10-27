@@ -7,6 +7,8 @@ import { CompanyListComponent } from './company-list/company-list.component';
 import { RatingManagerComponent } from './rating-manager/rating-manager.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { FrontPageComponent } from './front-page/front-page.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     CompanyListComponent,
     RatingManagerComponent,
     NavigationBarComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    FrontPageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +31,10 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
         path: 'rating',
         component: RatingManagerComponent
       },
+      {
+        path: '',
+        component: FrontPageComponent
+      }
       ]
     )
   ],

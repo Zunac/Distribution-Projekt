@@ -17,7 +17,7 @@
 }
 
 .topNav a:focus {
-  background-color: #4CAF50;
+  background-color: tomato;
   color: white;
 }
 
