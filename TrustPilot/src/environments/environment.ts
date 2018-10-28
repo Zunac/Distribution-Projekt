@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyDcTDfFCQicjcTvBSP8LUwJLv3fix676_U",
+    authDomain: "trustpilot-database.firebaseapp.com",
+    databaseURL: "https://trustpilot-database.firebaseio.com",
+    projectId: "trustpilot-database",
+    storageBucket: "trustpilot-database.appspot.com",
+    messagingSenderId: "221063241660"
+  }
 };
 
 /*
