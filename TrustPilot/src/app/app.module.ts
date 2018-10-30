@@ -14,6 +14,10 @@ import {AngularFireDatabaseModule} from 'angularfire2/database';
 import {environment} from "../environments/environment";
 import { AddUserComponent } from './add-user/add-user.component';
 
+import { AddReviewComponent } from './add-review/add-review.component';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,12 +28,14 @@ import { AddUserComponent } from './add-user/add-user.component';
     FrontPageComponent,
     FooterComponent,
     AddUserComponent,
+    AddReviewComponent
   ],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     RouterModule.forRoot([
+
         {
           path: 'company',
           component: CompanyListComponent
@@ -41,7 +47,24 @@ import { AddUserComponent } from './add-user/add-user.component';
         {
           path: '',
           component: FrontPageComponent
-        }
+        },
+      {
+        path: 'company',
+        component: CompanyListComponent
+      },
+      {
+        path: 'rating',
+        component: RatingManagerComponent
+      },
+      {
+        path: 'addreview',
+        component: AddReviewComponent
+      },
+      {
+        path: '',
+        component: FrontPageComponent
+      }
+
       ]
     )
   ],
