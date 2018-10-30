@@ -2,47 +2,34 @@
 <ul xmlns="">
  <li *ngFor="let company of companies">
    Company: {{company.company_name}}, rating: {{company.rating}}
-
-
  </li>
 </ul>
 
-<h4>Add a new company</h4>
-
-
-
-
-
-
-<script>
-  function setCompany(){
-    var com_name, rating;
-
-    com_name = document.getElementById("comname").valueOf();
-    rating = document.getElementById("rating").valueOf();
-  add_Company_Parser(com_name, rating);
-  }
-
-    function add_Company_Parser(company_name, rating) {
-
-    angular.addCompany(company_name, rating);
-  }
-  document.getElementById("hellobutton").addEventListener("click", hello);
-</script>
+<h2>Add a new company:</h2>
 
 <div>
+  <!--
   <label for="comname">Company name</label>
   <input type="text" id="comname" name="company_name" placeholder="The name of the company...">
 
   <label for="rating">Rating</label>
   <input type="text" id="rating" name="rating" placeholder="Please write a rating...">
-
-
-  <button onclick ="add_Company_Parser(company_name, rating)">Add</button>
-
-
+  -->
+  <p><b>Name:</b></p>
+  <input (keyup)="onKey($event, 'name')">
+  <p><b>Rating:</b></p>
+  <input (keyup)="onKey($event, 'rating')">
+  <p></p>
+  <button (click)="addCompany()"><b>Add</b></button>
 
 </div>
 
 
+<script>
+  var com_name, rating;
 
+  com_name = document.getElementById("comname").valueOf();
+  rating = document.getElementById("rating").valueOf();
+  angular.addCompany(com_name, rating);
+
+</script>

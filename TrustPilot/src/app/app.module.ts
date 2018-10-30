@@ -6,16 +6,29 @@ import { AppComponent } from './app.component';
 import { CompanyListComponent } from './company-list/company-list.component';
 import { RatingManagerComponent } from './rating-manager/rating-manager.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
+import { SearchBarComponent } from './search-bar/search-bar.component';
+import { FrontPageComponent } from './front-page/front-page.component';
+import { FooterComponent } from './footer/footer.component';
+import {AngularFireModule} from 'angularfire2';
+import {AngularFireDatabaseModule} from 'angularfire2/database';
+import {environment} from "../environments/environment";
+import { AddUserComponent } from './add-user/add-user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CompanyListComponent,
     RatingManagerComponent,
-    NavigationBarComponent
+    NavigationBarComponent,
+    SearchBarComponent,
+    FrontPageComponent,
+    FooterComponent,
+    AddUserComponent
   ],
   imports: [
     BrowserModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
     RouterModule.forRoot([
       {
         path: 'company',
@@ -25,6 +38,10 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
         path: 'rating',
         component: RatingManagerComponent
       },
+      {
+        path: '',
+        component: FrontPageComponent
+      }
       ]
     )
   ],
