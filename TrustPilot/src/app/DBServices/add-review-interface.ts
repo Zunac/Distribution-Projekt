@@ -1,3 +1,5 @@
+import {Company} from "../company-list/company-list.component";
+
 export interface AddReviewInterface {
 }
 
@@ -14,3 +16,6 @@ function SaveReview(username: String, rating: number, title: String, reviewText:
 
 }
 
+function GetCompanyList() {
+  return [];
+}
