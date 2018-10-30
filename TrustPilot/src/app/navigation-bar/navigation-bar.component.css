@@ -13,11 +13,11 @@
 }
 
 .topNav a:hover {
-  background-color: black;
+  background-color: seagreen;
 }
 
 .topNav a:focus {
-  background-color: tomato;
+  background-color: seagreen;
   color: white;
 }
 
