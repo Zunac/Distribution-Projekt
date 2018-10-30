@@ -5,12 +5,12 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyDcTDfFCQicjcTvBSP8LUwJLv3fix676_U",
-    authDomain: "trustpilot-database.firebaseapp.com",
-    databaseURL: "https://trustpilot-database.firebaseio.com",
-    projectId: "trustpilot-database",
-    storageBucket: "trustpilot-database.appspot.com",
-    messagingSenderId: "221063241660"
+    apiKey: "AIzaSyCRevMn01-GloHMLEFcX8wQj7iogtg4dYE",
+    authDomain: "pilottrust-e3824.firebaseapp.com",
+    databaseURL: "https://pilottrust-e3824.firebaseio.com",
+    projectId: "pilottrust-e3824",
+    storageBucket: "pilottrust-e3824.appspot.com",
+    messagingSenderId: "811410090871"
   }
 };
 
