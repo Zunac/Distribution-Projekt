@@ -14,6 +14,8 @@ import {AngularFireDatabaseModule} from 'angularfire2/database';
 import {environment} from "../environments/environment";
 import { AddUserComponent } from './add-user/add-user.component';
 import { AddReviewComponent } from './add-review/add-review.component';
+import { DBServiceComponent } from './dbservice/dbservice.component';
+
 
 @NgModule({
   declarations: [
@@ -26,6 +28,7 @@ import { AddReviewComponent } from './add-review/add-review.component';
     FooterComponent,
     AddUserComponent,
     AddReviewComponent
+    DBServiceComponent
   ],
   imports: [
     BrowserModule,
