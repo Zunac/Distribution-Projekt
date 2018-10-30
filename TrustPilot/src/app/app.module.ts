@@ -13,6 +13,7 @@ import {AngularFireModule} from 'angularfire2';
 import {AngularFireDatabaseModule} from 'angularfire2/database';
 import {environment} from "../environments/environment";
 import { AddUserComponent } from './add-user/add-user.component';
+import { AddReviewComponent } from './add-review/add-review.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AddUserComponent } from './add-user/add-user.component';
     SearchBarComponent,
     FrontPageComponent,
     FooterComponent,
-    AddUserComponent
+    AddUserComponent,
+    AddReviewComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +39,10 @@ import { AddUserComponent } from './add-user/add-user.component';
       {
         path: 'rating',
         component: RatingManagerComponent
+      },
+      {
+        path: 'addreview',
+        component: AddReviewComponent
       },
       {
         path: '',
