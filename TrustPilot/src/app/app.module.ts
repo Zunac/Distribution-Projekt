@@ -9,6 +9,10 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { FrontPageComponent } from './front-page/front-page.component';
 import { FooterComponent } from './footer/footer.component';
+import {AngularFireModule} from 'angularfire2';
+import {AngularFireDatabaseModule} from 'angularfire2/database';
+import {environment} from "../environments/environment";
+import { AddUserComponent } from './add-user/add-user.component';
 
 @NgModule({
   declarations: [
@@ -18,10 +22,13 @@ import { FooterComponent } from './footer/footer.component';
     NavigationBarComponent,
     SearchBarComponent,
     FrontPageComponent,
-    FooterComponent
+    FooterComponent,
+    AddUserComponent
   ],
   imports: [
     BrowserModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
     RouterModule.forRoot([
       {
         path: 'company',
