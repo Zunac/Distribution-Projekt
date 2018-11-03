@@ -13,7 +13,7 @@ import {AngularFireModule} from 'angularfire2';
 import {AngularFireDatabaseModule} from 'angularfire2/database';
 import {environment} from "../environments/environment";
 import { AddUserComponent } from './add-user/add-user.component';
-import { DBServiceComponent } from './dbservice/dbservice.component';
+import { CountrySelectComponent } from './country-select/country-select.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,7 @@ import { DBServiceComponent } from './dbservice/dbservice.component';
     FrontPageComponent,
     FooterComponent,
     AddUserComponent,
-    DBServiceComponent
+    CountrySelectComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,6 +43,10 @@ import { DBServiceComponent } from './dbservice/dbservice.component';
       {
         path: '',
         component: FrontPageComponent
+      },
+      {
+        path: 'add_user',
+        component: AddUserComponent
       }
       ]
     )
