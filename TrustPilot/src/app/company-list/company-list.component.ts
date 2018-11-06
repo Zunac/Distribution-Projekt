@@ -1,4 +1,6 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {DatabaseConnection} from "../DBServices/database-connection";
+import {DatabaseService} from "../DBServices/database.service";
 
 @Component({
   selector: 'app-company-list',
@@ -8,25 +10,39 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 export class CompanyListComponent implements OnInit {
   @Input() public company_name: string;
   @Input() public rating: string;
+  //db: DatabaseConnection;
 
 
 
 
 
+  companies : Company[];
 
-  public companies = [
-    {company_name: 'EA', rating: '1'},
-    {company_name: 'MBRose', rating: '5'}
-  ];
+
 
 
   addCompany() {
     this.companies.push(new Company(this.company_name, this.rating));
+
   }
 
-  constructor() { }
+  /*showCompanies(){
+    this.dbs.getCompanies().subscribe(companies => {
+      this.companies = companies;
+    })
+    console.log(this.companies + "Hello world");
+  }
+*/
+
+
+  constructor(private dbs: DatabaseService) { }
 
   ngOnInit() {
+    this.dbs.getCompanies().subscribe(companies => {
+      this.companies = companies;
+      console.log(companies.toString() + "  <==Database data bro");
+
+    })
   }
 
   input = '';
@@ -59,4 +75,6 @@ export class Company{
     this.company_name = company_name;
     this.rating = rating;
   }
-}
+  }
+
+

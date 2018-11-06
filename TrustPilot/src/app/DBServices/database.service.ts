@@ -1,10 +1,15 @@
-import {AddReviewInterface} from "../DBServices/add-review-interface";
+import { Injectable } from '@angular/core';
+import {DatabaseConnection} from "./database-connection";
+import {Observable} from "rxjs";
 import {AngularFirestore,AngularFirestoreCollection, AngularFirestoreDocument} from 'angularfire2/firestore';
-import { Observable, of } from 'rxjs';
 import {Company} from "../models/Company";
 
-export class DatabaseConnection {
-  companies: Observable<any[]>;
+
+@Injectable({
+  providedIn: 'root'
+})
+export class DatabaseService {
+  companies: Observable<Company[]>;
   users: Observable<any[]>;
   reviews: Observable<any[]>;
 
@@ -27,9 +32,4 @@ export class DatabaseConnection {
     return this.reviews;
   }
 
-
-
-
 }
-
-
