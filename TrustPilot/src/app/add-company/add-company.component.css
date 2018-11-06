@@ -46,4 +46,24 @@ p{
   color: whitesmoke;
 }
 
+.country-span-select{
+  border-radius: 10px;
+  margin-top: 30px;
+  width: 400px;
+  height: 50px;
+  font-size:20px;
+  font-family: Arial;
+  padding-left: 20px;
+}
 
+.user-select-input-desc{
+  width: 500px;
+  resize: none;
+  padding-top: 10px;
+  padding-left: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-space: 10px;
+  font-size: 15px;
+  font-family: Arial;
+}

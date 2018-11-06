@@ -17,6 +17,7 @@ import { AddUserComponent } from './add-user/add-user.component';
 import { CountrySelectComponent } from './country-select/country-select.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { AddReviewComponent } from './add-review/add-review.component';
+import { AddCompanyComponent } from './add-company/add-company.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { AddReviewComponent } from './add-review/add-review.component';
     AddUserComponent,
     CountrySelectComponent,
     UserProfileComponent,
-    AddReviewComponent
+    AddReviewComponent,
+    AddCompanyComponent
   ],
 
   imports: [
@@ -60,6 +62,10 @@ import { AddReviewComponent } from './add-review/add-review.component';
       {
         path: 'add_user',
         component: AddUserComponent
+      },
+      {
+        path: 'add_company',
+        component: AddCompanyComponent
       }
 
       ]
