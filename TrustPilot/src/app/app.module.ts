@@ -16,7 +16,6 @@ import { environment } from "../environments/environment";
 import { AddUserComponent } from './add-user/add-user.component';
 import { CountrySelectComponent } from './country-select/country-select.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
-import { UserAddedComponent } from './user-added/user-added.component';
 import { AddReviewComponent } from './add-review/add-review.component';
 
 @NgModule({
@@ -31,7 +30,6 @@ import { AddReviewComponent } from './add-review/add-review.component';
     AddUserComponent,
     CountrySelectComponent,
     UserProfileComponent,
-    UserAddedComponent,
     AddReviewComponent
   ],
 
@@ -62,10 +60,6 @@ import { AddReviewComponent } from './add-review/add-review.component';
       {
         path: 'add_user',
         component: AddUserComponent
-      },
-      {
-        path: 'user_added',
-        component: UserAddedComponent
       }
 
       ]
