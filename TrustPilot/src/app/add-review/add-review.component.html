@@ -1,52 +1,57 @@
 <div class="review-form">
 
   <form>
-
+<!-- -->
     <label> Title</label><br>
-    <input type="text" id="fname" name="fname">
+    <input (keyup)="onKey($event, 'title')">
     <br>
     <label> Review</label><br>
-    <textarea>Some text...</textarea><br>
+    <textarea (keyup)="onKey($event, 'review')"></textarea>
+      <br>
 
     <div class="row">
       <div class="col-25">
-        <label for="companyPick">Country</label>
+        <label for="com">Company</label>
       </div>
 
       <div class="col-75">
 
-
-        
+        <select id="com" name="rating">
+          <option (keyup)="onKey($event, 'company')" *ngFor="let company of companies" value="Companies">{{company.name}}</option>
+        </select>
 
 
       </div>
     </div>
 
-      <div class="row">
-        <div class="col-25">
-          <label for="rating">Country</label>
-        </div>
-        <div class="col-75">
-          <select id="rating" name="rating">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-        </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="rating">Rating</label>
       </div>
-
-      <div class="row">
-        <input type="submit" value="Submit">
+      <div class="col-75">
+        <select id="rating" name="rating">
+          <option (keyup)="onKey($event, 'stars')" value="1">1 star</option>
+          <option (keyup)="onKey($event, 'stars')" value="2">2 star</option>
+          <option (keyup)="onKey($event, 'stars')" value="3">3 star</option>
+          <option (keyup)="onKey($event, 'stars')" value="4">4 star</option>
+          <option (keyup)="onKey($event, 'stars')" value="5">5 star</option>
+        </select>
       </div>
+    </div>
 
-
+    <div class="row">
+      <button (click)="addReview()"><b>Add</b></button>
+    </div>
 
 
   </form>
 
-
-
-
-
+  <ul xmlns="">
+    <li *ngFor="let Review of reviews">
+      Company: {{Review}}
+    </li>
+  </ul>
 
 </div>
+
+

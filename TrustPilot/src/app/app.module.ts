@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from "@angular/router";
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CompanyListComponent } from './company-list/company-list.component';
 import { RatingManagerComponent } from './rating-manager/rating-manager.component';
@@ -31,6 +31,7 @@ import { AddReviewComponent } from './add-review/add-review.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     RouterModule.forRoot([
