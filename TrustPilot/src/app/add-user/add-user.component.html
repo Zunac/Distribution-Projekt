@@ -1,11 +1,16 @@
 <div class="user-input">
-  <p class="pTitle">Create a new user</p>
-  <form class="user-input-form" autocomplete="on">
-    <input class="user-select-input" id="email" type="email" placeholder="Mail"><br>
-    <input class="user-select-input" id="fname" type="text" placeholder="First Name"><br>
-    <input class="user-select-input" id="lname" type="text" placeholder="Last Name"><br>
-    <input class="user-select-input" id="passWord" type="password" placeholder="Password"><br>
-    <input class="user-select-input" id="passWordRepeat" type="password" placeholder="Repeat Password"><br>
-    <button class="user-input-submit-but">Submit</button>
+  <p class="pTitle">Create a new user</p><br>
+  <p id="wrongInput"></p>
+  <form class="user-input-form" autocomplete="on"
+        #userForm = "ngForm"
+        (ngSubmit) = "onSubmit(userForm.value)">
+    <input class="user-select-input" name="email" id="email" type="email" placeholder="Mail" [(ngModel)]="mailAddress">  *<br>
+    <input class="user-select-input" name="fname"  id="fname" type="text" placeholder="First Name" ngModel><br>
+    <input class="user-select-input" name="lname" id="lname" type="text" placeholder="Last Name" ngModel><br>
+    <input class="user-select-input" name="pW" id="pW" type="password" placeholder="Password" [(ngModel)]="pwValue">  *<br>
+    <input class="user-select-input" name="pWRepeat" id="pWRepeat" type="password" placeholder="Repeat Password" [(ngModel)]="repeatPW">  *<br>
+    <p>* required <br>
+    <input class="user-input-submit-but" type="submit" text="Add Account">
   </form>
 </div>
+

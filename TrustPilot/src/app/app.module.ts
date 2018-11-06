@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from "@angular/router";
-
+import { FormsModule } from "@angular/forms";
 import { AppComponent } from './app.component';
 import { CompanyListComponent } from './company-list/company-list.component';
 import { RatingManagerComponent } from './rating-manager/rating-manager.component';
@@ -14,6 +14,8 @@ import {AngularFireDatabaseModule} from 'angularfire2/database';
 import {environment} from "../environments/environment";
 import { AddUserComponent } from './add-user/add-user.component';
 import { CountrySelectComponent } from './country-select/country-select.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { UserAddedComponent } from './user-added/user-added.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +28,14 @@ import { CountrySelectComponent } from './country-select/country-select.componen
     FooterComponent,
     AddUserComponent,
     CountrySelectComponent,
+    UserProfileComponent,
+    UserAddedComponent,
   ],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
+    FormsModule,
     RouterModule.forRoot([
       {
         path: 'company',
@@ -47,6 +52,10 @@ import { CountrySelectComponent } from './country-select/country-select.componen
       {
         path: 'add_user',
         component: AddUserComponent
+      },
+      {
+        path: 'user_added',
+        component: UserAddedComponent
       }
       ]
     )

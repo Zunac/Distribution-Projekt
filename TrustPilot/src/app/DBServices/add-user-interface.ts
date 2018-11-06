@@ -5,9 +5,8 @@ export interface AddUserInterface {
   user: PrivateUser;
 
   addUserToDatabase(): boolean;
-  passWordExistCheck(): boolean;
-  userExistCheck(): boolean;
-  emailExistCheck(): boolean;
+  passWordExistCheck(password): boolean;
+  emailExistCheck(email): boolean;
 }
 
 export class AddUser implements AddUserInterface {
@@ -31,15 +30,11 @@ export class AddUser implements AddUserInterface {
     return false;
   };
 
-  emailExistCheck(): boolean {
+  emailExistCheck(email): boolean {
     return false;
   }
 
-  passWordExistCheck(): boolean {
-    return false;
-  }
-
-  userExistCheck(): boolean {
+  passWordExistCheck(password): boolean {
     return false;
   }
 

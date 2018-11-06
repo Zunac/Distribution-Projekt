@@ -3,7 +3,9 @@ import {Company} from "../company-list/company-list.component";
 export interface AddCompanyInterface {
   company: Company;
 
-  addCompanyToDB();
+  addCompanyToDB(): boolean;
+  passWordExistCheck(): boolean;
+  companyExistCheck(): boolean;
 }
 
 export class AddCompany implements AddCompanyInterface{
@@ -21,7 +23,16 @@ export class AddCompany implements AddCompanyInterface{
     this._company = value;
   }
 
-  addCompanyToDB() {
+  addCompanyToDB(): boolean {
+    return true;
+  }
+
+  companyExistCheck(): boolean {
+    return false;
+  }
+
+  passWordExistCheck(): boolean {
+    return false;
   }
 
 }
