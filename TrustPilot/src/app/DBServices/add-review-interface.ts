@@ -1,4 +1,4 @@
-import {Company} from "../company-list/company-list.component";
+
 
 export interface AddReviewInterface {
 }

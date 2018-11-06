@@ -1,8 +1,12 @@
 .footer {
-  background-color: tomato;
+  background-color: seagreen;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   color: white;
+}
+
+p{
+  margin-left: 20px;
 }

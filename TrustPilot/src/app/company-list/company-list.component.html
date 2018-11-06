@@ -1,7 +1,7 @@
 
 <ul xmlns="">
- <li *ngFor="let company of companies">
-   Company: {{company.company_name}}, rating: {{company.rating}}
+  <li *ngFor="let company of companies">
+   Company: {{company.name}}, rating: {{company.rating}}
  </li>
 </ul>
 
@@ -20,7 +20,6 @@
   <p><b>Rating:</b></p>
   <input (keyup)="onKey($event, 'rating')">
   <p></p>
-  <button (click)="addCompany()"><b>Add</b></button>
 
 </div>
 
@@ -30,6 +29,5 @@
 
   com_name = document.getElementById("comname").valueOf();
   rating = document.getElementById("rating").valueOf();
-  angular.addCompany(com_name, rating);
 
 </script>
