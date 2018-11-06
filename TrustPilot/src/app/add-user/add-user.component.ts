@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {CompanyService} from "../DBServices/company.service";
+import {Company} from "../app.model";
 
 @Component({
   selector: 'app-add-user',
@@ -10,7 +12,14 @@ export class AddUserComponent implements OnInit {
   mailAddress: String;
   repeatPW: String;
 
-  constructor() { }
+  company: Company = {
+    name: '',
+    description: '',
+    rating: 0
+  }
+
+  constructor(private dbService: CompanyService) {
+  }
 
   ngOnInit() {
   }
@@ -21,6 +30,20 @@ export class AddUserComponent implements OnInit {
       this.pwValue = null;
       this.repeatPW = null;
     }
+
+    //this.company.name = this.mailAddress.valueOf();
+    //this.company.description = this.pwValue.valueOf();
+    this.company.rating = 1;
+
+    //this.dbService.addCompany(this.company);
+
+
+    this.dbService.getCompanyList().forEach((comp: Company) => {
+          console.log(comp.name);
+      }
+    )
+
   }
 
 }
+

@@ -1,8 +1,7 @@
-import {PrivateUser} from "../Shared/PrivateUser";
+
 
 
 export interface AddUserInterface {
-  user: PrivateUser;
 
   addUserToDatabase(): boolean;
   passWordExistCheck(password): boolean;
@@ -11,20 +10,12 @@ export interface AddUserInterface {
 
 export class AddUser implements AddUserInterface {
 
-  private _user: PrivateUser;
 
 
-  constructor(user: PrivateUser) {
-    this._user = user;
+  constructor() {
   }
 
-  get user(): PrivateUser {
-    return this._user;
-  }
 
-  set user(value: PrivateUser) {
-    this._user = value;
-  }
 
   addUserToDatabase(): boolean {
     return false;

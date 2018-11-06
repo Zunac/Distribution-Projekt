@@ -10,12 +10,14 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
 import { FrontPageComponent } from './front-page/front-page.component';
 import { FooterComponent } from './footer/footer.component';
 import {AngularFireModule} from 'angularfire2';
+import {AngularFirestoreModule} from 'angularfire2/firestore';
 import {AngularFireDatabaseModule} from 'angularfire2/database';
-import {environment} from "../environments/environment";
+import { environment } from "../environments/environment";
 import { AddUserComponent } from './add-user/add-user.component';
 import { CountrySelectComponent } from './country-select/country-select.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { UserAddedComponent } from './user-added/user-added.component';
+import { AddReviewComponent } from './add-review/add-review.component';
 
 @NgModule({
   declarations: [
@@ -30,13 +32,17 @@ import { UserAddedComponent } from './user-added/user-added.component';
     CountrySelectComponent,
     UserProfileComponent,
     UserAddedComponent,
+    AddReviewComponent
   ],
+
   imports: [
     BrowserModule,
-    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule.initializeApp(environment.firebase, 'angularfs'),
+    AngularFirestoreModule,
     AngularFireDatabaseModule,
     FormsModule,
     RouterModule.forRoot([
+
       {
         path: 'company',
         component: CompanyListComponent
@@ -44,6 +50,10 @@ import { UserAddedComponent } from './user-added/user-added.component';
       {
         path: 'rating',
         component: RatingManagerComponent
+      },
+      {
+        path: 'addreview',
+        component: AddReviewComponent
       },
       {
         path: '',
@@ -57,10 +67,11 @@ import { UserAddedComponent } from './user-added/user-added.component';
         path: 'user_added',
         component: UserAddedComponent
       }
+
       ]
     )
   ],
-  providers: [],
+  providers: [AngularFirestoreModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

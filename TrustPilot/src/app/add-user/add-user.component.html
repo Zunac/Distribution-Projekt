@@ -4,11 +4,11 @@
   <form class="user-input-form" autocomplete="on"
         #userForm = "ngForm"
         (ngSubmit) = "onSubmit(userForm.value)">
-    <input class="user-select-input" name="email" id="email" type="email" placeholder="Mail" [(ngModel)]="mailAddress">  *<br>
+    <input class="user-select-input" name="mailAdd" id="mailAddress" type="email" placeholder="Mail" [(ngModel)]="mailAddress">  *<br>
     <input class="user-select-input" name="fname"  id="fname" type="text" placeholder="First Name" ngModel><br>
     <input class="user-select-input" name="lname" id="lname" type="text" placeholder="Last Name" ngModel><br>
-    <input class="user-select-input" name="pW" id="pW" type="password" placeholder="Password" [(ngModel)]="pwValue">  *<br>
-    <input class="user-select-input" name="pWRepeat" id="pWRepeat" type="password" placeholder="Repeat Password" [(ngModel)]="repeatPW">  *<br>
+    <input class="user-select-input" name="pWone" id="pW" type="password" placeholder="Password" [(ngModel)]="pwValue">  *<br>
+    <input class="user-select-input" name="pWrep" id="pWRepeat" type="password" placeholder="Repeat Password" [(ngModel)]="repeatPW">  *<br>
     <p>* required <br>
     <input class="user-input-submit-but" type="submit" text="Add Account">
   </form>
