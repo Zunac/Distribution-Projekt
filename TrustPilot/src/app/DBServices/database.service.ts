@@ -1,6 +1,4 @@
 import { Injectable } from '@angular/core';
-import {DatabaseConnection} from "./database-connection";
-import {Observable} from "rxjs";
 import {AngularFirestore,AngularFirestoreCollection, AngularFirestoreDocument} from 'angularfire2/firestore';
 import {Company} from "../models/Company";
 
@@ -9,27 +7,19 @@ import {Company} from "../models/Company";
   providedIn: 'root'
 })
 export class DatabaseService {
-  companies: Observable<Company[]>;
-  users: Observable<any[]>;
-  reviews: Observable<any[]>;
 
-
+  compList: AngularFirestoreCollection<Company>;
+  db: AngularFirestore;
 
   constructor(db: AngularFirestore) {
-    this.companies = db.collection('Companies').valueChanges();
-    this.users = db.collection('users').valueChanges();
-    this.reviews = db.collection('Reviews').valueChanges();
-
+    this.db = db;
   }
 
-  getCompanies(){
-    return this.companies;
+  addCompany(companyid: Company): any{
+    this.compList = this.db.collection('Companies');
+    this.compList.add(companyid);
+    return true;
   }
-  getUsers(){
-    return this.users;
-  }
-  getReviews(){
-    return this.reviews;
-  }
+
 
 }

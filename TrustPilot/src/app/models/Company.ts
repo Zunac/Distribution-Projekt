@@ -3,3 +3,11 @@ export interface Company{
   name: string;
   rating?: number;
 }
+
+export class CompanyImpl implements Company{
+  description: string;
+  name: string;
+  rating: number;
+
+
+}

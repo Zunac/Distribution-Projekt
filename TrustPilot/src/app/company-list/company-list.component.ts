@@ -1,5 +1,4 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {DatabaseConnection} from "../DBServices/database-connection";
 import {DatabaseService} from "../DBServices/database.service";
 
 @Component({
