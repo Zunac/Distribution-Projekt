@@ -37,14 +37,16 @@ export class CompanyService {
 
   getCompanyList(){
     this.list = this.db.collection<Company>('Companies').valueChanges();
+    this.compList = [];
     this.list.subscribe((data: Company[]) => {
-      this.compList = [];
       data.forEach((comp: Company) => {
           this.compList.push(comp);
         }
       )
-    })
-    return this.compList
+    });
+    console.log(this.compList)
+    return this.compList;
+
   }
 
 

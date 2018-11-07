@@ -1,33 +1,7 @@
-
 <ul xmlns="">
   <li *ngFor="let company of companies">
-   Company: {{company.name}}, rating: {{company.rating}}
- </li>
+   Company Name: {{company.name}}, rating: {{company.rating}},description: {{company.description}}
+  </li>
 </ul>
 
-<h2>Add a new company:</h2>
 
-<div>
-  <!--
-  <label for="comname">Company name</label>
-  <input type="text" id="comname" name="company_name" placeholder="The name of the company...">
-
-  <label for="rating">Rating</label>
-  <input type="text" id="rating" name="rating" placeholder="Please write a rating...">
-  -->
-  <p><b>Name:</b></p>
-  <input (keyup)="onKey($event, 'name')">
-  <p><b>Rating:</b></p>
-  <input (keyup)="onKey($event, 'rating')">
-  <p></p>
-
-</div>
-
-
-<script>
-  var com_name, rating;
-
-  com_name = document.getElementById("comname").valueOf();
-  rating = document.getElementById("rating").valueOf();
-
-</script>

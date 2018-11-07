@@ -1,5 +1,6 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {Company} from "../models/Company";
+import {Component, EventEmitter, OnInit} from '@angular/core';
+import {CompanyService} from "../DBServices/company.service";
+import {Company} from "../app.model";
 
 @Component({
   selector: 'app-company-list',
@@ -7,29 +8,17 @@ import {Company} from "../models/Company";
   styleUrls: ['./company-list.component.css']
 })
 export class CompanyListComponent implements OnInit {
-  @Input() public company_name: string;
-  @Input() public rating: string;
 
-  companies : Company[];
+  companies: Company[];
 
-  constructor() { }
+  constructor(public compService: CompanyService) {
+
+  }
 
   ngOnInit() {
-
+    this.companies = this.compService.getCompanyList();
   }
 
-  input = '';
-
-  onKey(event: KeyboardEvent, type: string) { // without type info
-    this.input += (<HTMLInputElement>event.target).value;
-    if(type = 'name'){
-
-    }
-    if(type = 'rating'){
-
-    }
-    this.input = '';
-  }
 
 }
 
