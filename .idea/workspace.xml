@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4deec8e-c5cc-4973-a13c-01e3d1b4de52" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/typescript-compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrustPilot/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/TrustPilot/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,7 +30,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="2" />
+          <entry key="css" value="3" />
           <entry key="html" value="3" />
           <entry key="json" value="4" />
           <entry key="ts" value="9" />
@@ -38,7 +38,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="2" />
+          <entry key="CSS" value="3" />
           <entry key="HTML" value="3" />
           <entry key="JSON" value="1" />
           <entry key="TypeScript" value="9" />
@@ -52,16 +52,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="31" />
-          <entry key="html" value="1443" />
+          <entry key="css" value="119" />
+          <entry key="html" value="1466" />
           <entry key="json" value="4" />
           <entry key="ts" value="1098" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="31" />
-          <entry key="HTML" value="1443" />
+          <entry key="CSS" value="119" />
+          <entry key="HTML" value="1466" />
           <entry key="TypeScript" value="1098" />
           <entry key="tsconfig" value="4" />
         </counts>
@@ -127,14 +127,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="238">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#0#62#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -175,8 +184,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+            <state relative-caret-position="102">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -186,18 +195,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
               <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.spec.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#73#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -220,7 +217,6 @@
       <list>
         <option value="$PROJECT_DIR$/TrustPilot/src/app/rating-manager/rating-manager.component.ts" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/rating-manager/rating-manager.component.css" />
-        <option value="$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.css" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/rating-manager/rating-manager.component.html" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/search-bar/search-bar.component.html" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/front-page/front-page.component.css" />
@@ -247,7 +243,6 @@
         <option value="$PROJECT_DIR$/TrustPilot/src/app/DBServices/database.service.spec.ts" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/DBServices/company.service.ts" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.ts" />
-        <option value="$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.html" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/navigation-bar/navigation-bar.component.html" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/add-user/add-user.component.ts" />
@@ -258,6 +253,8 @@
         <option value="$PROJECT_DIR$/TrustPilot/src/app/add-company/add-company.component.css" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/add-company/add-company.component.html" />
         <option value="$PROJECT_DIR$/TrustPilot/tsconfig.json" />
+        <option value="$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.html" />
+        <option value="$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.css" />
       </list>
     </option>
   </component>
@@ -275,10 +272,9 @@
       <path value="$PROJECT_DIR$/TrustPilot/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="812" />
-    <option name="y" value="-9" />
-    <option name="width" value="975" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="953" />
+    <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
@@ -430,7 +426,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84315000" />
+    <option name="totallyTimeSpent" value="87471000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
@@ -601,16 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/country-select/country-select.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -755,11 +741,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#0#62#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
