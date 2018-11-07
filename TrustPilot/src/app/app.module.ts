@@ -10,10 +10,12 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
 import { FrontPageComponent } from './front-page/front-page.component';
 import { FooterComponent } from './footer/footer.component';
 import {AngularFireModule} from 'angularfire2';
+import {AngularFireAuth} from 'angularfire2/auth'
 import {AngularFireDatabaseModule} from 'angularfire2/database';
 import {environment} from "../environments/environment";
 import { AddUserComponent } from './add-user/add-user.component';
-import { DBServiceComponent } from './dbservice/dbservice.component';
+import { LoginComponent } from './login/login.component';
+import { AuthService } from './services/auth.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,7 @@ import { DBServiceComponent } from './dbservice/dbservice.component';
     FrontPageComponent,
     FooterComponent,
     AddUserComponent,
-    DBServiceComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -43,11 +45,15 @@ import { DBServiceComponent } from './dbservice/dbservice.component';
       {
         path: '',
         component: FrontPageComponent
+      },
+      {
+        path: 'login',
+        component: LoginComponent
       }
       ]
     )
   ],
-  providers: [],
+  providers: [AuthService, AngularFireAuth],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
