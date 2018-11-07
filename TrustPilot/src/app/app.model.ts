@@ -8,4 +8,11 @@ export interface Company{
   rating?: number;
 }
 
+export interface Review{
+  username?: string;
+  name?: string;
+  review?: string;
+  title?: string;
+  rating?: number;
+}
 

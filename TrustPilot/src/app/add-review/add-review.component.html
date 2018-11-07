@@ -3,10 +3,10 @@
   <form>
 <!-- -->
     <label> Title</label><br>
-    <input (keyup)="onKey($event, 'title')">
+    <input [(ngModel)]="title">
     <br>
     <label> Review</label><br>
-    <textarea (keyup)="onKey($event, 'review')"></textarea>
+    <textarea [(ngModel)]="review"></textarea>
       <br>
 
     <div class="row">
@@ -17,7 +17,7 @@
       <div class="col-75">
 
         <select id="com" name="rating">
-          <option (keyup)="onKey($event, 'company')" *ngFor="let company of companies" value="Companies">{{company.name}}</option>
+          <option [(ngModel)]="name" *ngFor="let company of companies" value="Companies">{{company.name}}</option>
         </select>
 
 
@@ -30,11 +30,11 @@
       </div>
       <div class="col-75">
         <select id="rating" name="rating">
-          <option (keyup)="onKey($event, 'stars')" value="1">1 star</option>
-          <option (keyup)="onKey($event, 'stars')" value="2">2 star</option>
-          <option (keyup)="onKey($event, 'stars')" value="3">3 star</option>
-          <option (keyup)="onKey($event, 'stars')" value="4">4 star</option>
-          <option (keyup)="onKey($event, 'stars')" value="5">5 star</option>
+          <option [(ngModel)]="rating" value="1">1 star</option>
+          <option [(ngModel)]="rating" value="2">2 star</option>
+          <option [(ngModel)]="rating" value="3">3 star</option>
+          <option [(ngModel)]="rating" value="4">4 star</option>
+          <option [(ngModel)]="rating" value="5">5 star</option>
         </select>
       </div>
     </div>
