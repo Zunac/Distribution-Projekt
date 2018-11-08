@@ -9,3 +9,11 @@ export interface Company{
 }
 
 
+export interface Review{
+  username?: string;
+  companyname?: string;
+  review?: string;
+  title?: string;
+  rating?: string;
+}
+

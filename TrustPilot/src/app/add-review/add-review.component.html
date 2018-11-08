@@ -1,52 +1,19 @@
 <div class="review-form">
 
-  <form>
+  <form class="user-input-form" autocomplete="on"
+        #reviewForm = "ngForm"
+        (ngSubmit) = "onSubmit(reviewForm.value)">
+    <input class="user-select-input" name="mailAdd" id="mailAddress" type="email" placeholder="Title" [(ngModel)]="title">  *<br>
+    <textarea class="user-select-input-desc" cols="40" rows="5" maxlength="200" name="description" id="description" type="text" placeholder="Review (max: 200)" [(ngModel)]="review"></textarea> <br>
+    <input class="user-select-input" name="compAddress" id="compAddress" type="text" placeholder="Rating from 1-5" [(ngModel)]="rating">  *<br>
 
-    <label> Title</label><br>
-    <input type="text" id="fname" name="fname">
-    <br>
-    <label> Review</label><br>
-    <textarea>Some text...</textarea><br>
-
-    <div class="row">
-      <div class="col-25">
-        <label for="companyPick">Country</label>
-      </div>
-
-      <div class="col-75">
-
-
-        
-
-
-      </div>
-    </div>
-
-      <div class="row">
-        <div class="col-25">
-          <label for="rating">Country</label>
-        </div>
-        <div class="col-75">
-          <select id="rating" name="rating">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="row">
-        <input type="submit" value="Submit">
-      </div>
-
-
-
+    <select class="country-span-select" name="countSelect" autocomplete="country-name" [(ngModel)]="companyname">
+      <option name="name" *ngFor="let company of companies" value={{company.name}}>{{company.name}}</option>
+    </select>
+      <p>* required <br>
+        <input class="user-input-submit-but" type="submit" text="Add Review">
+      </p>
 
   </form>
-
-
-
-
-
 
 </div>
