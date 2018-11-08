@@ -7,7 +7,7 @@
     <textarea class="user-select-input-desc" cols="40" rows="5" maxlength="200" name="description" id="description" type="text" placeholder="Review (max: 200)" [(ngModel)]="review"></textarea> <br>
     <input class="user-select-input" name="compAddress" id="compAddress" type="text" placeholder="Rating from 1-5" [(ngModel)]="rating">  *<br>
 
-    <select class="country-span-select" name="countSelect" autocomplete="country-name" [(ngModel)]="name">
+    <select class="country-span-select" name="countSelect" autocomplete="country-name" [(ngModel)]="companyname">
       <option name="name" *ngFor="let company of companies" value={{company.name}}>{{company.name}}</option>
     </select>
       <p>* required <br>

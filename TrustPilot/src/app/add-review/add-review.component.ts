@@ -15,12 +15,12 @@ export class AddReviewComponent implements OnInit {
   username: string;
   title: string;
   review: string;
-  name: string;
+  companyname: string;
   rating: string;
 
   reviews: Review = {
     username: '',
-    name: '',
+    companyname: '',
     review: '',
     title: '',
     rating: ''
@@ -32,7 +32,7 @@ export class AddReviewComponent implements OnInit {
 
     this.reviews.username = "test";
     this.reviews.title = this.title;
-    this.reviews.name = this.name;
+    this.reviews.companyname = this.companyname;
     this.reviews.rating = this.rating;
     this.reviews.review = this.review;
 
