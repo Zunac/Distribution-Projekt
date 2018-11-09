@@ -1,6 +1,11 @@
 <ul xmlns="">
-  <li *ngFor="let company of companies">
-   Company Name: {{company.name}}, rating: {{company.rating}},description: {{company.description}}, Country:
+  <li *ngFor="let company of companies" (click)="goCompany(company.name)">
+      <b>Company Name:</b>  {{company.name}}
+      <br>
+      <b>Rating:</b> {{company.rating}}
+      <br>
+      <b>Description:</b>  {{company.description}}
+      <br>
   </li>
 </ul>
 
