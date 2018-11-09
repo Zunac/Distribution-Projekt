@@ -24,7 +24,7 @@ export class CompanyService {
   }
 
   getCompany(companyName: String){
-    this.angList = this.db.collection('Companies', ref => ref.where('bane', '==', companyName));
+    this.angList = this.db.collection('Companies', ref => ref.where('name', '==', companyName));
     this.list.subscribe((data: Company[]) => {
       this.compList = [];
       data.forEach((comp: Company) => {

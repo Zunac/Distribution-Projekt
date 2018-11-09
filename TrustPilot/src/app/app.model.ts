@@ -7,5 +7,3 @@ export interface Company{
   address: string;
   rating?: number;
 }
-
-

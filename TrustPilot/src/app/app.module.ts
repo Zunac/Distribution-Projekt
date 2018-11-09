@@ -8,14 +8,11 @@ import { RatingManagerComponent } from './rating-manager/rating-manager.componen
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { FrontPageComponent } from './front-page/front-page.component';
-import { FooterComponent } from './footer/footer.component';
-import {AngularFireModule} from 'angularfire2';
-import {AngularFirestoreModule} from 'angularfire2/firestore';
-import {AngularFireDatabaseModule} from 'angularfire2/database';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from "../environments/environment";
 import { AddUserComponent } from './add-user/add-user.component';
-import { CountrySelectComponent } from './country-select/country-select.component';
-import { UserProfileComponent } from './user-profile/user-profile.component';
 import { AddReviewComponent } from './add-review/add-review.component';
 import { AddCompanyComponent } from './add-company/add-company.component';
 
@@ -27,10 +24,7 @@ import { AddCompanyComponent } from './add-company/add-company.component';
     NavigationBarComponent,
     SearchBarComponent,
     FrontPageComponent,
-    FooterComponent,
     AddUserComponent,
-    CountrySelectComponent,
-    UserProfileComponent,
     AddReviewComponent,
     AddCompanyComponent
   ],
