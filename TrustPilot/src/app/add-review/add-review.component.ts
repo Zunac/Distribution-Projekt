@@ -2,6 +2,7 @@ import {Component, Input, OnInit, Output} from '@angular/core';
 import {ReviewService} from "../DBServices/reviewService";
 import {Review} from "../app.model";
 import {CompanyService} from "../DBServices/company.service";
+import {Router} from "@angular/router";
 
 
 
@@ -40,9 +41,10 @@ export class AddReviewComponent implements OnInit {
     this.reviewService.addReview(this.reviews);
     console.log("review added");
 
+    this.router.navigate(['/'])
   }
 
-  constructor(private reviewService: ReviewService, private companyService: CompanyService) {
+  constructor(private reviewService: ReviewService, private companyService: CompanyService, private router: Router) {
 
   }
 

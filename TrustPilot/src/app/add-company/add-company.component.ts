@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {CompanyService} from "../DBServices/company.service";
 import {Company} from "../app.model";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-add-company',
@@ -22,7 +23,7 @@ export class AddCompanyComponent implements OnInit {
     address: ""
   }
 
-  constructor(private compService: CompanyService) { }
+  constructor(private compService: CompanyService, private router: Router) { }
 
   ngOnInit() {
   }
@@ -36,7 +37,7 @@ export class AddCompanyComponent implements OnInit {
 
     this.compService.addCompany(this.comp);
     console.log("company added");
-
+    this.router.navigate(['/'])
   }
 
 }
