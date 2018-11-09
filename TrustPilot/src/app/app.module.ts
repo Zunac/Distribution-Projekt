@@ -18,6 +18,8 @@ import { CountrySelectComponent } from './country-select/country-select.componen
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { AddReviewComponent } from './add-review/add-review.component';
 import { AddCompanyComponent } from './add-company/add-company.component';
+import { ReviewListComponent } from './review-list/review-list.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { AddCompanyComponent } from './add-company/add-company.component';
     CountrySelectComponent,
     UserProfileComponent,
     AddReviewComponent,
-    AddCompanyComponent
+    AddCompanyComponent,
+    ReviewListComponent
   ],
 
   imports: [
@@ -46,6 +49,10 @@ import { AddCompanyComponent } from './add-company/add-company.component';
       {
         path: 'company',
         component: CompanyListComponent
+      },
+      {
+        path: 'reviews',
+        component: ReviewListComponent
       },
       {
         path: 'rating',
@@ -69,7 +76,8 @@ import { AddCompanyComponent } from './add-company/add-company.component';
       }
 
       ]
-    )
+    ),
+    AppRoutingModule
   ],
   providers: [AngularFirestoreModule],
   bootstrap: [AppComponent]
