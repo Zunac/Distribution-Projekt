@@ -29,6 +29,8 @@ export class ReviewListComponent implements OnInit {
 
     this.reviews = this.compService.getReviews(this.company_name);
 
+    document.getElementById("title-id").innerText = this.company_name;
+
   }
 
 

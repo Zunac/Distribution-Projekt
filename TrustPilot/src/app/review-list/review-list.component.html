@@ -1,4 +1,7 @@
-<ul >
+<p class="title-class" name="title-name" id="title-id"></p>
+
+<div class="review-list">
+<ul>
   <li *ngFor="let review of reviews">
     <b>Title:</b>  {{review.title}}
     <p></p>
@@ -8,9 +11,9 @@
     <p></p>
     <b>Rating:</b> {{review.rating}}
     <p></p>
-    <b>Description:</b>  {{review.review}}
+    <b>Review:</b>  {{review.review}}
     <p></p>
   </li>
 </ul>
 
-
+</div>
