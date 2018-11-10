@@ -8,4 +8,11 @@ export interface Company{
   rating?: number;
 }
 
-
+export interface UserInfo {
+  uid?: string;
+  fore_name: string;
+  last_name: string;
+  country: string;
+  address: string;
+  user_type: string;
+}

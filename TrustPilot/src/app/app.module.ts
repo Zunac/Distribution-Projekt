@@ -10,17 +10,19 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
 import { FrontPageComponent } from './front-page/front-page.component';
 import { FooterComponent } from './footer/footer.component';
 import {AngularFireModule} from 'angularfire2';
-<<<<<<< HEAD
 import {AngularFireAuth} from 'angularfire2/auth'
-=======
->>>>>>> Developer
+import {AngularFirestoreModule} from 'angularfire2/firestore';
 import {AngularFireDatabaseModule} from 'angularfire2/database';
+import { environment } from "../environments/environment";
 import { AddUserComponent } from './add-user/add-user.component';
-<<<<<<< HEAD
 import { LoginComponent } from './login/login.component';
 import { AuthService } from './services/auth.service';
-=======
->>>>>>> Developer
+import { CountrySelectComponent } from './country-select/country-select.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { AddReviewComponent } from './add-review/add-review.component';
+import { AddCompanyComponent } from './add-company/add-company.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { UserInfoService } from './services/user-info-service.service';
 
 @NgModule({
   declarations: [
@@ -32,15 +34,20 @@ import { AuthService } from './services/auth.service';
     FrontPageComponent,
     FooterComponent,
     AddUserComponent,
-<<<<<<< HEAD
-    LoginComponent
-=======
->>>>>>> Developer
+    LoginComponent,
+    CountrySelectComponent,
+    UserProfileComponent,
+    AddReviewComponent,
+    AddCompanyComponent,
+    SignUpComponent
   ],
 
   imports: [
     BrowserModule,
+    AngularFireModule.initializeApp(environment.firebase, 'angularfs'),
+    AngularFirestoreModule,
     AngularFireDatabaseModule,
+    FormsModule,
     RouterModule.forRoot([
 
       {
@@ -52,23 +59,34 @@ import { AuthService } from './services/auth.service';
         component: RatingManagerComponent
       },
       {
+        path: 'addreview',
+        component: AddReviewComponent
+      },
+      {
         path: '',
         component: FrontPageComponent
       },
       {
-<<<<<<< HEAD
         path: 'login',
-        component: LoginComponent
-=======
->>>>>>> Developer
+        component: LoginComponent,
+      },
+      {
+        path: 'add_user',
+        component: AddUserComponent
+      },
+      {
+        path: 'add_company',
+        component: AddCompanyComponent
+      },
+      {
+        path: 'sign_up',
+        component: SignUpComponent
       }
 
       ]
     )
   ],
-<<<<<<< HEAD
-  providers: [AuthService, AngularFireAuth],
-  providers: [AngularFirestoreModule],
+  providers: [AuthService, AngularFireAuth, AngularFirestoreModule, UserInfoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
