@@ -16,8 +16,8 @@ import { AddReviewComponent } from './add-review/add-review.component';
 import { AddCompanyComponent } from './add-company/add-company.component';
 import { ReviewListComponent } from './review-list/review-list.component';
 import { AppRoutingModule } from './app-routing.module';
-import { SignUpComponent } from './sign-up/sign-up.component';
 import { LoginComponent } from './login/login.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 import { UserInfoService } from './services/user-info-service.service';
 
 @NgModule({
@@ -29,7 +29,8 @@ import { UserInfoService } from './services/user-info-service.service';
     AddReviewComponent,
     AddCompanyComponent,
     ReviewListComponent,
-    SignUpComponent
+    SignUpComponent,
+    LoginComponent
   ],
 
   imports: [

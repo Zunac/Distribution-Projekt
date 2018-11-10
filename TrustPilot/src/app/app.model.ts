@@ -8,8 +8,6 @@ export interface Company{
   rating?: number;
 }
 
-<<<<<<< HEAD
-
 export interface Review{
   title?: string;
   username?: string;
@@ -18,8 +16,6 @@ export interface Review{
   review?: string;
 }
 
-
-=======
 export interface UserInfo {
   uid?: string;
   fore_name: string;
@@ -28,4 +24,3 @@ export interface UserInfo {
   address: string;
   user_type: string;
 }
->>>>>>> LoginTesting
