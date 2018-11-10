@@ -8,6 +8,7 @@ export interface Company{
   rating?: number;
 }
 
+<<<<<<< HEAD
 
 export interface Review{
   title?: string;
@@ -18,3 +19,5 @@ export interface Review{
 }
 
 
+=======
+>>>>>>> LoginTesting
