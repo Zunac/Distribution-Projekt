@@ -11,6 +11,7 @@ import {UserInfoService} from "../services/user-info-service.service";
 export class LoginComponent implements OnInit {
 
   constructor(private authService: AuthService, private router: Router, private userInfoService: UserInfoService) {
+    if(authService.isLoggedIn()) this.authService.logout();
   }
 
   ngOnInit() {

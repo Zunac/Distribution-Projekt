@@ -4,8 +4,8 @@
   <form class="user-input-form" autocomplete="on"
         #userInfoForm = "ngForm"
         (ngSubmit) = "onSubmit(userInfoForm.value)">
-    <input class="user-select-input" name="Forename"  id="cname" type="text" placeholder="Forename" [(ngModel)]="registration.fore_name">  *<br>
-    <input class="user-select-input" name="Last name" id="compAddress" type="text" placeholder="Last name" [(ngModel)]="registration.last_name">  *<br>
+    <input class="user-select-input" name="fore_name"  id="cname" type="text" placeholder="Forename" [(ngModel)]="registration.fore_name">  *<br>
+    <input class="user-select-input" name="last_name" id="compAddress" type="text" placeholder="Last name" [(ngModel)]="registration.last_name">  *<br>
     <input class="user-select-input" name="address" id="mailAddress" type="email" placeholder="Home Address" [(ngModel)]="registration.address">  *<br>
 
     <select name="user_select" class="country-span-select" name="userSelect" autocomplete="country-name" [(ngModel)]="registration.user_type">
