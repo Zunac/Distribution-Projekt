@@ -54,6 +54,10 @@ import { UserInfoService } from './services/user-info-service.service';
         component: AddReviewComponent
       },
       {
+        path: 'add_company',
+        component: AddCompanyComponent
+      },
+      {
         path: '',
         component: FrontPageComponent
       },
