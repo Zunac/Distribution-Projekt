@@ -1,0 +1,54 @@
+const mongoose = require('mongoose');
+
+const Schema = mongoose.Schema;
+
+let ReviewSchema = new Schema({
+    title: {
+        type: String,
+        required: false
+    },
+    username: {
+        type: String,
+        required: false
+    },
+    companyname: {
+        type: String,
+        required: false
+    },
+    rating: {
+        type: String,
+        required: false
+    },
+    review: {
+        type: String,
+        required: false
+    }
+});
+
+const Review = module.exports = mongoose.model('Review', ReviewSchema);
+
+module.exports.addReview = function(newReview, callback) {
+    newReview.save(callback);
+};
+
+module.exports.removeReview = function(companyName, userName, callback){
+    const query = ({companyname: companyName, username: userName});
+    const review = Review.findOne(query);
+    Review.remove(review, callback);
+};
+
+module.exports.getReviewsByUsername = function(username, callback){
+    const query = ({username: username});
+    Review.find(query, callback);
+};
+
+module.exports.getReviewsByCompanyName = function(companyName, callback){
+    const query = ({companyname: companyName});
+    console.log(query);
+    Review.find(query, callback);
+};
+
+module.exports.removeReviewById = function(id, callback){
+    const query = ({id: id});
+    Review.find(query).remove(callback);
+};

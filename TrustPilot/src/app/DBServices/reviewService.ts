@@ -44,7 +44,6 @@ export class ReviewService {
         }
       )
     });
-    console.log(this.reviewList)
     return this.reviewList;
 
   }
