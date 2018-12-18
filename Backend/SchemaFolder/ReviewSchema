@@ -44,7 +44,6 @@ module.exports.getReviewsByUsername = function(username, callback){
 
 module.exports.getReviewsByCompanyName = function(companyName, callback){
     const query = ({companyname: companyName});
-    console.log(query);
     Review.find(query, callback);
 };
 
