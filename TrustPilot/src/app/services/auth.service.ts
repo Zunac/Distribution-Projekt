@@ -1,78 +1,59 @@
 import { Injectable } from '@angular/core';
 import { Router } from "@angular/router";
-
-import { AngularFireAuth } from 'angularfire2/auth';
-import * as firebase from 'firebase/app';
-import { Observable } from 'rxjs';
+import {HttpClient, HttpHeaders} from "@angular/common/http";
+import { JwtHelperService} from "@auth0/angular-jwt";
 
 @Injectable()
 export class AuthService {
-  private user: Observable<firebase.User>;
-  private userDetails: firebase.User = null;
 
-  constructor(private _firebaseAuth: AngularFireAuth, private router: Router) {
-    this.user = _firebaseAuth.authState;
+  api: any = 'http://localhost:4000/api/authentication/';
+  authToken: any;
+  user: any;
 
-    this.user.subscribe(
-      (user) => {
-        if (user) {
-          this.userDetails = user;
-        }
-        else {
-          this.userDetails = null;
-        }
-      }
-    );
+  constructor(private router: Router,
+              private http: HttpClient) {
 
   }
 
-  signInWithGoogle() {
-    return this._firebaseAuth.auth.signInWithPopup(
-      new firebase.auth.GoogleAuthProvider()
-    )
+  authenticate(user){
+    console.log('hello');
+    let headers = new HttpHeaders();
+    headers.append('Content-Type','application/json');
+    return this.http.post(this.api + 'authenticate', user ,{headers: headers});
   }
 
-  isLoggedIn() {
-    if(this.userDetails == null) {
+  storeData(user, token){
+    localStorage.setItem('id_token', token);
+    localStorage.setItem('user', JSON.stringify(user));
+    this.authToken = token;
+    this.user = user;
+  }
+
+  logout(){
+    this.authToken = null;
+    this.user = null;
+    localStorage.clear();
+  }
+
+  loadToken(){
+    const token = localStorage.getItem('id_token');
+    this.authToken = token;
+  }
+
+  isLoggedIn(){
+    const jwt = new JwtHelperService();
+    this.loadToken();
+    if(this.authToken == null){
       return false;
-    } else {
-      return true;
     }
-
+    const isExpired = jwt.isTokenExpired(this.authToken);
+    if(isExpired){
+      this.logout();
+      return false;
+    }
+     return true;
   }
 
-  logout() {
-    this.userDetails = null;
-    this._firebaseAuth.auth.signOut();
-  }
-
-  getUserDetails() {
-    return this.userDetails;
-  }
 
 }
 
-class UserInfo {
-
-  constructor(name: string, uid:string, email:string) {
-    this.name = name;
-    this.uid = uid;
-    this.email = email;
-  }
-
-  getUid() {
-    return this.uid;
-  }
-
-  getName() {
-    return this.name;
-  }
-
-  getEmail() {
-    return this.email;
-  }
-
-  private name : string;
-  private uid : string;
-  private email : string;
-}

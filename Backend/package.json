@@ -4,14 +4,18 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server"
   },
   "dependencies": {
-    "express": "*",
+    "express": "^4.16.4",
     "mongoose": "^5.4.0",
-    "bcryptjs": "*",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^8.4.0",
     "cors": "^2.8.5",
-    "body-parser": "^1.18.3"
+    "body-parser": "^1.18.3",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0"
   },
   "keywords": [],
   "author": "Marc Nielsen",

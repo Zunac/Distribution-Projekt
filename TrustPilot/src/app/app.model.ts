@@ -18,9 +18,8 @@ export interface Review{
 
 export interface UserInfo {
   uid?: string;
-  fore_name: string;
-  last_name: string;
-  country: string;
-  address: string;
-  user_type: string;
+  name: string;
+  username: string;
+  email: string;
+  password: string;
 }

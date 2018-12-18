@@ -1,7 +1,7 @@
 import {Component, Input, OnInit, Output} from '@angular/core';
-import {ReviewService} from "../DBServices/reviewService";
+import {ReviewService} from "../services/reviewService";
 import {Review} from "../app.model";
-import {CompanyService} from "../DBServices/company.service";
+import {CompanyService} from "../services/company.service";
 import {Router} from "@angular/router";
 
 

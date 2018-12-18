@@ -2,12 +2,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from "@angular/router";
 import { FormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
 import { AppComponent } from './app.component';
 import { CompanyListComponent } from './company-list/company-list.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { FrontPageComponent } from './front-page/front-page.component';
 import { AngularFireAuth} from 'angularfire2/auth';
-import {AuthService} from "./services/auth.service";
+import { AuthService } from "./services/auth.service";
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
@@ -18,7 +19,11 @@ import { ReviewListComponent } from './review-list/review-list.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
-import { UserInfoService } from './services/user-info-service.service';
+import { RegisterService } from './services/registerService';
+import { NgFlashMessagesModule} from "ng-flash-messages";
+import { ValidateService } from "./services/validateService";
+import { AuthGuard } from "./services/auth.guard";
+import { JwtHelperService} from "@auth0/angular-jwt";
 
 @NgModule({
   declarations: [
@@ -30,7 +35,7 @@ import { UserInfoService } from './services/user-info-service.service';
     AddCompanyComponent,
     ReviewListComponent,
     SignUpComponent,
-    LoginComponent
+    LoginComponent,
   ],
 
   imports: [
@@ -39,6 +44,8 @@ import { UserInfoService } from './services/user-info-service.service';
     AngularFirestoreModule,
     AngularFireDatabaseModule,
     FormsModule,
+    NgFlashMessagesModule,
+    HttpClientModule,
     RouterModule.forRoot([
 
       {
@@ -51,11 +58,13 @@ import { UserInfoService } from './services/user-info-service.service';
       },
       {
         path: 'addreview',
-        component: AddReviewComponent
+        component: AddReviewComponent,
+        canActivate: [AuthGuard]
       },
       {
         path: 'add_company',
-        component: AddCompanyComponent
+        component: AddCompanyComponent,
+        canActivate: [AuthGuard]
       },
       {
         path: '',
@@ -63,7 +72,7 @@ import { UserInfoService } from './services/user-info-service.service';
       },
       {
         path: 'login',
-        component: LoginComponent,
+        component: LoginComponent
       },
       {
         path: 'sign_up',
@@ -74,7 +83,7 @@ import { UserInfoService } from './services/user-info-service.service';
     ),
     AppRoutingModule
   ],
-  providers: [AuthService, AngularFireAuth, AngularFirestoreModule, UserInfoService],
+  providers: [JwtHelperService, ValidateService, AuthGuard, AuthService, AngularFireAuth, AngularFirestoreModule, RegisterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -40,7 +40,7 @@ export class CompanyService {
 
         }
       )
-    })
+    });
     console.log(this.compList);
     return this.compList
   }
@@ -70,8 +70,6 @@ export class CompanyService {
 
         }
       )
-
-
     });
 
     return this.reviewList;

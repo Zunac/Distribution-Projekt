@@ -2,7 +2,7 @@
 
   <form class="user-input-form" autocomplete="on"
         #reviewForm = "ngForm"
-        (ngSubmit) = "onSubmit(reviewForm.value)"
+        (ngSubmit) = "onSubmit()"
         action="/">
     <input class="user-select-input" name="mailAdd" id="mailAddress" type="email" placeholder="Title" [(ngModel)]="title">  *<br>
     <textarea class="user-select-input-desc" cols="40" rows="5" maxlength="200" name="description" id="description" type="text" placeholder="Review (max: 200)" [(ngModel)]="review"></textarea> <br>

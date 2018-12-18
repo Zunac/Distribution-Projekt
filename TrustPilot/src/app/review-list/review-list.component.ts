@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Review} from "../app.model";
-import {CompanyService} from "../DBServices/company.service";
+import {CompanyService} from "../services/company.service";
 import {ActivatedRoute} from "@angular/router";
 
 

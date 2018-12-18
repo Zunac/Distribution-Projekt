@@ -3,7 +3,7 @@
   <p id="wrongInput"></p>
   <form class="user-input-form" autocomplete="on"
         #companyForm = "ngForm"
-        (ngSubmit) = "onSubmit(companyForm.value)">
+        (ngSubmit) = "onSubmit()">
     <input class="user-select-input" name="mailAdd" id="mailAddress" type="email" placeholder="Mail" [(ngModel)]="companyMailAddress">  *<br>
     <input class="user-select-input" name="cname"  id="cname" type="text" placeholder="Company Name" [(ngModel)]="companyName">  *<br>
     <input class="user-select-input" name="compAddress" id="compAddress" type="text" placeholder="Address" [(ngModel)]="compAdd">  *<br>

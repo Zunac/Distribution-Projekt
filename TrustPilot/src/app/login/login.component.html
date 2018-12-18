@@ -1,4 +1,10 @@
-<button type="button" class="btn btn-block" (click)="signInWithGoogle()">
-  <i class="fa fa-google" aria-hidden="true"></i>
-  Login with Google
-</button>
+<div class="user-input">
+  <h2 class="pTitle">Login</h2><br>
+  <form class="user-input-form" autocomplete="on"
+        #userInfoForm = "ngForm"
+        (ngSubmit) = "onSubmit()">
+    <input class="user-select-input" name="uname"  id="uname" type="text" placeholder="Username" [(ngModel)]="username"> <br>
+    <input class="user-select-input" name="pw" id="pw" type="password" placeholder="Password" [(ngModel)]="password"><br>
+    <input class="user-input-submit-but" type="submit" value="Login">
+  </form>
+</div>
