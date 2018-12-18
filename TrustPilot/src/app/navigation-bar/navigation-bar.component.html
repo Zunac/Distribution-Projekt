@@ -8,6 +8,7 @@
   <div class="topNavRight">
     <a *ngIf="!authService.isLoggedIn()" [routerLinkActive]="['active']" [routerLink]="['/login']">Login</a>
     <a *ngIf="!authService.isLoggedIn()" [routerLinkActive]="['active']" [routerLink]="['/sign_up']">Register</a>
+    <a *ngIf="authService.isLoggedIn()" [routerLinkActive]="['active']" [queryParams]="{name: authService.getUser()}" [routerLink]="['/profile']">Profile</a>
     <a *ngIf="authService.isLoggedIn()" href="#" (click)="onLogoutClick()">Logout</a>
   </div>
 </div>

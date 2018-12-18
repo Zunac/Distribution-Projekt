@@ -20,7 +20,7 @@ export class AuthGuard implements CanActivate {
         timeout: 3000,
         type: 'danger'
       });
-      this.myRoute.navigate(["/login"]);
+      this.auth.logout();
       return false;
     }
   }

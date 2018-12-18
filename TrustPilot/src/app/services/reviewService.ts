@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import {AngularFirestore,AngularFirestoreCollection, AngularFirestoreDocument} from 'angularfire2/firestore';
 import {Review} from "../app.model";
+import { AuthService} from "./auth.service";
+import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {Observable} from "rxjs";
 
 
@@ -9,43 +10,34 @@ import {Observable} from "rxjs";
 })
 export class ReviewService {
 
-  angList: AngularFirestoreCollection<Review>;
-  reviewList = [];
-  list: Observable<Review[]>;
+  api: any = 'http://localhost:4000/api/review/';
 
-  constructor(private db: AngularFirestore) {
+  constructor(private http: HttpClient,
+              private auth: AuthService) {
   }
 
 
-  addReview(review): any{
-    this.angList = this.db.collection('Reviews');
-    this.angList.add(review);
-    return true;
+  addReview(review){
+    let headers = new HttpHeaders();
+    let token = this.auth.loadToken();
+    headers = headers.append('Content-Type','application/json');
+    headers = headers.append('Authorization', 'Bearer ' + token);
+    return this.http.post(this.api + 'addreview', review,{headers: headers});
   }
 
-  getReview(reviewTitle: String){
-    this.angList = this.db.collection('Reviews', ref => ref.where('bane', '==', reviewTitle));
-    this.list.subscribe((data: Review[]) => {
-      this.reviewList = [];
-      data.forEach((review: Review) => {
-          this.reviewList.push(review);
-        }
-      )
-    })
-    return this.reviewList
+  getUserReviews(username: String) {
+    let headers = new HttpHeaders();
+    headers = headers.append('Content-Type', 'application/json');
+    headers = headers.append('Authorization', 'Bearer ' + this.auth.loadToken());
+    return this.http.get(this.api + 'getuserreview/' + username, {headers: headers});
   }
 
-  getCompanyList(){
-    this.list = this.db.collection<Review>('Reviews').valueChanges();
-    this.reviewList = [];
-    this.list.subscribe((data: Review[]) => {
-      data.forEach((review: Review) => {
-          this.reviewList.push(review);
-        }
-      )
-    });
-    return this.reviewList;
 
+  getReviews(company: String){
+    let headers = new HttpHeaders();
+    headers = headers.append('Content-Type','application/json');
+    headers = headers.append('Authorization', 'Bearer ' + this.auth.loadToken());
+    return this.http.get(this.api + 'getcompanyreview/' + company,{headers: headers});
   }
 
 

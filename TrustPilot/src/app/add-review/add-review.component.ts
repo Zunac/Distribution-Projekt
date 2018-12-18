@@ -1,9 +1,11 @@
-import {Component, Input, OnInit, Output} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ReviewService} from "../services/reviewService";
 import {Review} from "../app.model";
 import {CompanyService} from "../services/company.service";
 import {Router} from "@angular/router";
-
+import { NgFlashMessageService } from "ng-flash-messages";
+import {ValidateService} from "../services/validateService";
+import {AuthService} from "../services/auth.service";
 
 
 @Component({
@@ -14,50 +16,63 @@ import {Router} from "@angular/router";
 
 
 export class AddReviewComponent implements OnInit {
-  username: string;
-  title: string;
-  review: string;
-  companyname: string;
-  rating: string;
+  username: string = "";
+  title: string = "";
+  review: string = "";
+  companyname: string = "";
+  rating: number = 0;
 
-  reviews: Review = {
-    username: '',
-    companyname: '',
-    review: '',
-    title: '',
-    rating: ''
-  };
+  companies;
+
+  constructor(private reviewService: ReviewService,
+              private companyService: CompanyService,
+              private router: Router,
+              private flash: NgFlashMessageService,
+              private validate: ValidateService,
+              private auth: AuthService) {}
 
 
   onSubmit() {
+    let review: Review = {
+      username: this.auth.getUser(),
+      companyname: this.companyname,
+      review: this.review,
+      title: this.title,
+      rating: this.rating.toString()
+    };
 
-
-    this.reviews.username = "test";
-    this.reviews.title = this.title;
-    this.reviews.companyname = this.companyname;
-    this.reviews.rating = this.rating;
-    this.reviews.review = this.review;
-
-    this.reviewService.addReview(this.reviews);
-    console.log("review added");
-
-    this.router.navigate(['/'])
+    if(this.validate.validateReview(review)){
+      this.reviewService.addReview(review).subscribe((data) => {
+        if(data['success']){
+          this.flash.showFlashMessage({
+            messages: ['Review added!'],
+            timeout: 3000,
+            type: 'success'
+          });
+          this.router.navigate(['/'])
+        } else {
+          this.flash.showFlashMessage({
+            messages: ['Service unavailable at the moment!'],
+            timeout: 3000,
+            type: 'danger'
+          });
+        };
+      });
+    } else {
+      this.flash.showFlashMessage({
+        messages: ['Invalid review please try again!'],
+        timeout: 3000,
+        type: 'danger'
+      });
+    }
   }
 
-  constructor(private reviewService: ReviewService, private companyService: CompanyService, private router: Router) {
-
-  }
 
   ngOnInit() {
-    this.companies = this.companyService.getCompanyList();
+    this.companyService.getCompanyList().subscribe(data => {
+      this.companies = data;
+    });
   }
-
-  companies = []
-
-
-
-
-
 }
 
 

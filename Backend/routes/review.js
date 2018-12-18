@@ -35,7 +35,7 @@ router.route('/getcompanyreview/:name').get((req, res) => {
     })
 });
 
-router.route('/getcompanyreview/:username').get(passport.authenticate('jwt',{session: false}), (req, res) => {
+router.route('/getuserreview/:username').get((req, res) => {
     Review.getReviewsByUsername(req.params.username, (err, review) => {
         if(err){
             res.json({success: false, msg:'Failed to get the reviews from the user'});

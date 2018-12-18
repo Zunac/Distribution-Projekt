@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {CompanyService} from "../services/company.service";
 import {Company} from "../app.model";
 import {Router} from "@angular/router";
+import { NgFlashMessageService } from "ng-flash-messages";
 
 @Component({
   selector: 'app-add-company',
@@ -23,7 +24,9 @@ export class AddCompanyComponent implements OnInit {
     address: ""
   }
 
-  constructor(private compService: CompanyService, private router: Router) { }
+  constructor(private compService: CompanyService,
+              private router: Router,
+              private flash: NgFlashMessageService) { }
 
   ngOnInit() {
   }
@@ -35,9 +38,24 @@ export class AddCompanyComponent implements OnInit {
     this.comp.email = this.companyMailAddress;
     this.comp.description = this.companyDesc;
 
-    this.compService.addCompany(this.comp);
-    console.log("company added");
-    this.router.navigate(['/'])
+    this.compService.addCompany(this.comp).subscribe((data) => {
+      if(data['success']){
+        this.flash.showFlashMessage({
+          messages: ['Company added!'],
+          timeout: 3000,
+          type: 'success'
+        });
+        this.router.navigate(['/'])
+      } else {
+        this.flash.showFlashMessage({
+          messages: ['Service unavailable at the moment!'],
+          timeout: 3000,
+          type: 'danger'
+        });
+      };
+    });
+
+
   }
 
 }

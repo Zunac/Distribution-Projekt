@@ -15,6 +15,7 @@ router.route('/addcompany').post(passport.authenticate('jwt',{session: false}), 
        address: req.body.address,
        rating: req.body.rating
    });
+
    Company.addCompany(company, (err, comp) => {
        if(err){
            res.json({success: false, msg:'Failed to add to the database'});

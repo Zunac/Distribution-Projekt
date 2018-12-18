@@ -13,20 +13,22 @@ export class CompanyListComponent implements OnInit {
 
 
 
-  companies: Company[];
+  companies;
   companyname: string;
 
   setCompanyname(name: string){
     this.companyname = name;
   }
 
-  constructor(private compService2: CompanyService, private router: Router) {
+  constructor(private compService: CompanyService, private router: Router) {
 
   }
 
   ngOnInit() {
-    this.companies = this.compService2.getCompanyList();
-    this.compService2.setCompanyname(this.companyname);
+    this.compService.getCompanyList().subscribe((data: Company[]) => {
+      this.companies = data;
+    });
+    this.compService.setCompanyname(this.companyname);
 
   }
 

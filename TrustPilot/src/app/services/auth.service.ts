@@ -16,7 +16,6 @@ export class AuthService {
   }
 
   authenticate(user){
-    console.log('hello');
     let headers = new HttpHeaders();
     headers.append('Content-Type','application/json');
     return this.http.post(this.api + 'authenticate', user ,{headers: headers});
@@ -30,28 +29,43 @@ export class AuthService {
   }
 
   logout(){
-    this.authToken = null;
-    this.user = null;
+    this.authToken = undefined;
+    this.user = undefined;
     localStorage.clear();
+    this.router.navigate(['/login']);
   }
 
   loadToken(){
-    const token = localStorage.getItem('id_token');
-    this.authToken = token;
+    const jwt = new JwtHelperService();
+    if(this.authToken != undefined) {
+      const isExpired = jwt.isTokenExpired(this.authToken);
+      if (isExpired) {
+        this.logout();
+        return this.authToken = undefined;
+      } else {
+        const token = localStorage.getItem('id_token');
+        return this.authToken = token;
+      }
+    } else {
+      return this.authToken;
+    }
   }
 
   isLoggedIn(){
-    const jwt = new JwtHelperService();
     this.loadToken();
-    if(this.authToken == null){
+    if(this.authToken == undefined){
       return false;
     }
-    const isExpired = jwt.isTokenExpired(this.authToken);
-    if(isExpired){
-      this.logout();
-      return false;
+    return true;
+  }
+
+  getUser(){
+    this.user = JSON.parse(localStorage.getItem('user'));
+    if(this.user != undefined) {
+      return this.user.username;
+    } else {
+      return undefined;
     }
-     return true;
   }
 
 

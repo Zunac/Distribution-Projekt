@@ -24,6 +24,7 @@ import { NgFlashMessagesModule} from "ng-flash-messages";
 import { ValidateService } from "./services/validateService";
 import { AuthGuard } from "./services/auth.guard";
 import { JwtHelperService} from "@auth0/angular-jwt";
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { JwtHelperService} from "@auth0/angular-jwt";
     ReviewListComponent,
     SignUpComponent,
     LoginComponent,
+    ProfileComponent,
   ],
 
   imports: [
@@ -55,6 +57,10 @@ import { JwtHelperService} from "@auth0/angular-jwt";
       {
         path: 'reviews',
         component: ReviewListComponent
+      },
+      {
+        path: 'profile',
+        component: ProfileComponent
       },
       {
         path: 'addreview',

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Review} from "../app.model";
-import {CompanyService} from "../services/company.service";
+import {ReviewService} from "../services/reviewService";
 import {ActivatedRoute} from "@angular/router";
 
 
@@ -10,24 +10,26 @@ import {ActivatedRoute} from "@angular/router";
   styleUrls: ['./review-list.component.css']
 })
 export class ReviewListComponent implements OnInit {
-  reviews: Review[];
+  reviews;
   company_name: string;
 
 
 
-  constructor(public compService: CompanyService, private route: ActivatedRoute) {
+  constructor(public revService: ReviewService, private route: ActivatedRoute) {
 
   }
 
   ngOnInit() {
 
     this.route.queryParams.subscribe(params => {
-      console.log(params);
       this.company_name = params.name;
     })
 
 
-    this.reviews = this.compService.getReviews(this.company_name);
+    this.revService.getReviews(this.company_name).subscribe((data) => {
+      this.reviews = data;
+    });
+
 
     document.getElementById("title-id").innerText = this.company_name + " reviews:";
 

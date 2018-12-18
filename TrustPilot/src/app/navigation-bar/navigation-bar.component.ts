@@ -29,7 +29,6 @@ export class NavigationBarComponent implements OnInit {
       timeout: 3000,
       type: 'success'
     });
-    this.router.navigate(['/']);
     return false;
   }
 }

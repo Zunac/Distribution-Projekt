@@ -5,7 +5,7 @@
   <li *ngFor="let review of reviews">
     <b>Title:</b>  {{review.title}}
     <p></p>
-    <b>User name:</b>  {{review.username}}
+    <b>User name: </b><a [queryParams]="{name: review.username}" [routerLink]="['/profile']">{{review.username}}</a>
     <p></p>
     <b>Company Name:</b>  {{review.companyname}}
     <p></p>
