@@ -1,5 +1,9 @@
 import {Component, EventEmitter, OnInit} from '@angular/core';
 import {CompanyService} from "../DBServices/company.service";
+
+//Node companyservice:
+import {Company_N_Service} from "../NodeServices/company_-n_.service";
+
 import {Company} from "../app.model";
 import {Review} from "../app.model";
 import {Router} from "@angular/router";
@@ -21,12 +25,12 @@ export class CompanyListComponent implements OnInit {
     this.companyname = name;
   }
 
-  constructor(private compService2: CompanyService, private router: Router) {
+  constructor(private comp_n_service: Company_N_Service, private router: Router, private compService2: CompanyService) {
 
   }
 
   ngOnInit() {
-    this.companies = this.compService2.getCompanyList();
+    this.companies = this.comp_n_service.getCompanies();
     this.compService2.setCompanyname(this.companyname);
 
   }

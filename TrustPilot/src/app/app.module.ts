@@ -19,6 +19,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { UserInfoService } from './services/user-info-service.service';
+//The "_N" stands for the company service implemented in Node.js
+import {Company_N_Service} from "./NodeServices/company_-n_.service";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -35,6 +38,7 @@ import { UserInfoService } from './services/user-info-service.service';
 
   imports: [
     BrowserModule,
+    HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase, 'angularfs'),
     AngularFirestoreModule,
     AngularFireDatabaseModule,
@@ -74,7 +78,7 @@ import { UserInfoService } from './services/user-info-service.service';
     ),
     AppRoutingModule
   ],
-  providers: [AuthService, AngularFireAuth, AngularFirestoreModule, UserInfoService],
+  providers: [AuthService, AngularFireAuth, AngularFirestoreModule, UserInfoService, Company_N_Service],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
