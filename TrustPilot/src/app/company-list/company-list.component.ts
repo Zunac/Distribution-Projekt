@@ -1,4 +1,9 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, OnInit} from '@angular/core';
+import {CompanyService} from "../DBServices/company.service";
+import {Company} from "../app.model";
+import {Review} from "../app.model";
+import {Router} from "@angular/router";
+
 
 @Component({
   selector: 'app-company-list',
@@ -6,57 +11,36 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
   styleUrls: ['./company-list.component.css']
 })
 export class CompanyListComponent implements OnInit {
-  @Input() public company_name: string;
-  @Input() public rating: string;
 
 
 
+  companies: Company[];
+  companyname: string;
 
-
-
-  public companies = [
-    {company_name: 'EA', rating: '1'},
-    {company_name: 'MBRose', rating: '5'}
-  ];
-
-
-  addCompany() {
-    this.companies.push(new Company(this.company_name, this.rating));
+  setCompanyname(name: string){
+    this.companyname = name;
   }
 
-  constructor() { }
+  constructor(private compService2: CompanyService, private router: Router) {
+
+  }
 
   ngOnInit() {
-  }
-
-  input = '';
-
-  onKey(event: KeyboardEvent, type: string) { // without type info
-    this.input += (<HTMLInputElement>event.target).value;
-    if(type = 'name'){
-      this.company_name = this.input;
-
-    }
-    if(type = 'rating'){
-      this.rating= this.input;
-
-    }
-    this.input = '';
-
-
-
+    this.companies = this.compService2.getCompanyList();
+    this.compService2.setCompanyname(this.companyname);
 
   }
+
+  goCompany(name){
+    this.router.navigate(['/reviews'], { queryParams: {name: name}})
+  }
+
+
+
+
 
 }
 
-export class Company{
-  public company_name: string;
-  public rating: string;
 
-  constructor(company_name: string, rating: string)
-  {
-    this.company_name = company_name;
-    this.rating = rating;
-  }
-}
+
+

@@ -1,53 +1,80 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from "@angular/router";
-
+import { FormsModule } from "@angular/forms";
 import { AppComponent } from './app.component';
 import { CompanyListComponent } from './company-list/company-list.component';
-import { RatingManagerComponent } from './rating-manager/rating-manager.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
-import { SearchBarComponent } from './search-bar/search-bar.component';
 import { FrontPageComponent } from './front-page/front-page.component';
-import { FooterComponent } from './footer/footer.component';
-import {AngularFireModule} from 'angularfire2';
-import {AngularFireDatabaseModule} from 'angularfire2/database';
-import {environment} from "../environments/environment";
-import { AddUserComponent } from './add-user/add-user.component';
-import { DBServiceComponent } from './dbservice/dbservice.component';
+import { AngularFireAuth} from 'angularfire2/auth';
+import {AuthService} from "./services/auth.service";
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { environment } from "../environments/environment";
+import { AddReviewComponent } from './add-review/add-review.component';
+import { AddCompanyComponent } from './add-company/add-company.component';
+import { ReviewListComponent } from './review-list/review-list.component';
+import { AppRoutingModule } from './app-routing.module';
+import { LoginComponent } from './login/login.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { UserInfoService } from './services/user-info-service.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     CompanyListComponent,
-    RatingManagerComponent,
     NavigationBarComponent,
-    SearchBarComponent,
     FrontPageComponent,
-    FooterComponent,
-    AddUserComponent,
-    DBServiceComponent
+    AddReviewComponent,
+    AddCompanyComponent,
+    ReviewListComponent,
+    SignUpComponent,
+    LoginComponent
   ],
+
   imports: [
     BrowserModule,
-    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule.initializeApp(environment.firebase, 'angularfs'),
+    AngularFirestoreModule,
     AngularFireDatabaseModule,
+    FormsModule,
     RouterModule.forRoot([
+
       {
         path: 'company',
         component: CompanyListComponent
       },
       {
-        path: 'rating',
-        component: RatingManagerComponent
+        path: 'reviews',
+        component: ReviewListComponent
+      },
+      {
+        path: 'addreview',
+        component: AddReviewComponent
+      },
+      {
+        path: 'add_company',
+        component: AddCompanyComponent
       },
       {
         path: '',
         component: FrontPageComponent
+      },
+      {
+        path: 'login',
+        component: LoginComponent,
+      },
+      {
+        path: 'sign_up',
+        component: SignUpComponent
       }
+
       ]
-    )
+    ),
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [AuthService, AngularFireAuth, AngularFirestoreModule, UserInfoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
