@@ -29,7 +29,7 @@ export class AddReviewComponent implements OnInit {
   };
 
 
-  onSubmit() {
+  onSubmit($event : any) {
 
 
     this.reviews.username = "test";
