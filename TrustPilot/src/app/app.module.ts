@@ -7,12 +7,7 @@ import { AppComponent } from './app.component';
 import { CompanyListComponent } from './company-list/company-list.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { FrontPageComponent } from './front-page/front-page.component';
-import { AngularFireAuth} from 'angularfire2/auth';
 import { AuthService } from "./services/auth.service";
-import { AngularFireModule } from 'angularfire2';
-import { AngularFirestoreModule } from 'angularfire2/firestore';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { environment } from "../environments/environment";
 import { AddReviewComponent } from './add-review/add-review.component';
 import { AddCompanyComponent } from './add-company/add-company.component';
 import { ReviewListComponent } from './review-list/review-list.component';
@@ -42,9 +37,6 @@ import { ProfileComponent } from './profile/profile.component';
 
   imports: [
     BrowserModule,
-    AngularFireModule.initializeApp(environment.firebase, 'angularfs'),
-    AngularFirestoreModule,
-    AngularFireDatabaseModule,
     FormsModule,
     NgFlashMessagesModule,
     HttpClientModule,
@@ -89,7 +81,7 @@ import { ProfileComponent } from './profile/profile.component';
     ),
     AppRoutingModule
   ],
-  providers: [JwtHelperService, ValidateService, AuthGuard, AuthService, AngularFireAuth, AngularFirestoreModule, RegisterService],
+  providers: [JwtHelperService, ValidateService, AuthGuard, AuthService, RegisterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
