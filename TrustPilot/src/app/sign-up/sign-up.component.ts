@@ -76,6 +76,12 @@ export class SignUpComponent implements OnInit {
             type: 'danger'
           });
         }
+      }, error => {
+        this.FlashMessageService.showFlashMessage({
+          messages: ['Service currently unavailable, please try again later!'],
+          timeout: 3000,
+          type: 'danger'
+        });
       });
     }
   }

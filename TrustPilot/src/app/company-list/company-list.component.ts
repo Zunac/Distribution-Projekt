@@ -2,6 +2,7 @@ import {Component, EventEmitter, OnInit} from '@angular/core';
 import {CompanyService} from "../services/company.service";
 import {Company} from "../app.model";
 import {Router} from "@angular/router";
+import {NgFlashMessageService} from "ng-flash-messages";
 
 
 @Component({
@@ -20,13 +21,27 @@ export class CompanyListComponent implements OnInit {
     this.companyname = name;
   }
 
-  constructor(private compService: CompanyService, private router: Router) {
+  constructor(private compService: CompanyService, private router: Router, private flash: NgFlashMessageService) {
 
   }
 
   ngOnInit() {
     this.compService.getCompanyList().subscribe((data: Company[]) => {
       this.companies = data;
+      console.log(this.companies.isEmpty);
+      if(this.companies.isEmpty){
+        this.flash.showFlashMessage({
+          messages: ['No companies listed at the moment!'],
+          timeout: 3000,
+          type: 'danger'
+        });
+      }
+    }, error => {
+      this.flash.showFlashMessage({
+        messages: ['Service currently unavailable, please try again later!'],
+        timeout: 3000,
+        type: 'danger'
+      });
     });
     this.compService.setCompanyname(this.companyname);
 

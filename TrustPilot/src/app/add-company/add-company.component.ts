@@ -48,7 +48,7 @@ export class AddCompanyComponent implements OnInit {
         this.router.navigate(['/'])
       } else {
         this.flash.showFlashMessage({
-          messages: ['Service unavailable at the moment!'],
+          messages: ['Service unavailable at the moment, please try again later!'],
           timeout: 3000,
           type: 'danger'
         });

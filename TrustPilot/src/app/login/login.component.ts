@@ -45,6 +45,12 @@ export class LoginComponent implements OnInit {
           type: 'danger'
         });
       }
+    }, error => {
+      this.flash.showFlashMessage({
+        messages: ['Service currently unavailable, please try again later!'],
+        timeout: 3000,
+        type: 'danger'
+      });
     });
   }
 }
