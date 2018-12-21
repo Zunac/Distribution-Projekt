@@ -1,11 +1,7 @@
 <div class="topNav">
-  <a href="">Home</a>
-  <a href="company">Show Companies</a>
-  <a href="add_company">Add Company</a>
-  <a href="addreview">Add Review</a>
-  <a href="login">Login</a>
+  <a [routerLinkActive]="['active']" [routerLink]="'/'">Home</a>
+  <a [routerLinkActive]="['active']" [routerLink]="'/company'">Show Companies</a>
+  <a [routerLinkActive]="['active']" [routerLink]="'/add_company'">Add Company</a>
+  <a [routerLinkActive]="['active']" [routerLink]="'/addreview'">Add Review</a>
+  <a [routerLinkActive]="['active']" [routerLink]="'/login'">Login</a>
 </div>
-
-
-
-
