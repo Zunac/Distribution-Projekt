@@ -28,7 +28,7 @@ export class AddCompanyComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSubmit(){
+  onSubmit($event : any){
     this.comp.address = this.compAdd;
     this.comp.country = this.countrySelect;
     this.comp.name = this.companyName;
