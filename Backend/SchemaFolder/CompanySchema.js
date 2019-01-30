@@ -47,5 +47,5 @@ module.exports.addCompany = function (newCompany, callback) {
 
 module.exports.removeCompany = function (id, callback) {
     const query = ({_id: id});
-    Comp.find(query).remove(callback);
+    Comp.deleteOne(query, callback);
 }

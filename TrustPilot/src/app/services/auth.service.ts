@@ -37,13 +37,13 @@ export class AuthService {
 
   loadToken(){
     const jwt = new JwtHelperService();
-    if(this.authToken != undefined) {
-      const isExpired = jwt.isTokenExpired(this.authToken);
+    if(localStorage.getItem('id_token') != undefined) {
+      const token = localStorage.getItem('id_token');
+      const isExpired = jwt.isTokenExpired(token);
       if (isExpired) {
         this.logout();
         return this.authToken = undefined;
       } else {
-        const token = localStorage.getItem('id_token');
         return this.authToken = token;
       }
     } else {
