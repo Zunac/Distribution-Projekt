@@ -6,7 +6,6 @@ const Review = require('../SchemaFolder/ReviewSchema');
 
 router.route('/addreview').post(passport.authenticate('jwt', {session: false}), (req, res) => {
     let review = new Review({
-        id: req.body.id,
         title: req.body.title,
         username: req.body.username,
         companyname: req.body.companyname,
@@ -46,19 +45,11 @@ router.route('/getuserreview/:username').get((req, res) => {
     })
 });
 
-router.route('/getcompanyreview').get((req, res) => {
-    Review.find((err, review) => {
-        if(err){
-            res.json({success: false, msg:'Failed to get the reviews from the company'});
-            console.log(err);
-        } else {
-            res.json(review);
-        }
-    })
-});
 
-router.route('/removereview').get(passport.authenticate('jwt',{session: false}), (req, res) => {
-    Review.removeReview(req.params.username, req.params.companyname, (err, review) => {
+
+router.route('/removereview/:identification').post(passport.authenticate('jwt',{session: false}), (req, res) => {
+    console.log(req.params.identification);
+    Review.removeReview(req.params.identification, (err, review) => {
         if(err){
             res.json({success: false, msg:'Failed to remove review'});
             console.log(err);

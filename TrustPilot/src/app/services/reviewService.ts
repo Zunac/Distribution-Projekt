@@ -40,5 +40,13 @@ export class ReviewService {
     return this.http.get(this.api + 'getcompanyreview/' + company,{headers: headers});
   }
 
+  removeReview(reviewid: String){
+    let headers = new HttpHeaders();
+    let token = this.auth.loadToken();
+    headers = headers.append('Content-Type', 'application/json');
+    headers = headers.append('Authorization', 'Bearer ' + token);
+    return this.http.post(this.api + 'removereview/' + reviewid, null, {headers: headers});
+  }
+
 
 }

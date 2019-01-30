@@ -31,10 +31,9 @@ module.exports.addReview = function(newReview, callback) {
     newReview.save(callback);
 };
 
-module.exports.removeReview = function(companyName, userName, callback){
-    const query = ({companyname: companyName, username: userName});
-    const review = Review.findOne(query);
-    Review.remove(review, callback);
+module.exports.removeReview = function(id, callback){
+    const query = ({_id: id});
+    Review.deleteOne(query, callback);
 };
 
 module.exports.getReviewsByUsername = function(username, callback){
@@ -47,7 +46,3 @@ module.exports.getReviewsByCompanyName = function(companyName, callback){
     Review.find(query, callback);
 };
 
-module.exports.removeReviewById = function(id, callback){
-    const query = ({id: id});
-    Review.find(query).remove(callback);
-};

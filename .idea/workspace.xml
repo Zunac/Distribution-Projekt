@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4deec8e-c5cc-4973-a13c-01e3d1b4de52" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/TrustPilot/src/app/add-company/add-company.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrustPilot/src/app/add-company/add-company.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrustPilot/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrustPilot/src/app/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrustPilot/src/app/sign-up/sign-up.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrustPilot/src/app/sign-up/sign-up.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/SchemaFolder/ReviewSchema" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/SchemaFolder/ReviewSchema" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/SchemaFolder/UserSchema.js" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/SchemaFolder/UserSchema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/routes/review.js" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/routes/review.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrustPilot/src/app/app.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrustPilot/src/app/app.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrustPilot/src/app/profile/profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrustPilot/src/app/profile/profile.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrustPilot/src/app/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrustPilot/src/app/profile/profile.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrustPilot/src/app/services/company.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrustPilot/src/app/services/company.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrustPilot/src/app/services/reviewService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrustPilot/src/app/services/reviewService.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -64,60 +69,64 @@
     <session id="1424951808">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="ReviewSchema" value="5" />
-          <entry key="css" value="49" />
-          <entry key="html" value="95" />
-          <entry key="js" value="61" />
-          <entry key="json" value="6" />
-          <entry key="md" value="2" />
-          <entry key="ts" value="311" />
+          <entry key="ReviewSchema" value="7" />
+          <entry key="css" value="52" />
+          <entry key="editorconfig" value="1" />
+          <entry key="gitignore" value="1" />
+          <entry key="html" value="109" />
+          <entry key="js" value="76" />
+          <entry key="json" value="9" />
+          <entry key="md" value="3" />
+          <entry key="ts" value="354" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="49" />
-          <entry key="HTML" value="95" />
-          <entry key="JSON" value="6" />
-          <entry key="JavaScript" value="66" />
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="TypeScript" value="311" />
+          <entry key="CSS" value="52" />
+          <entry key="HTML" value="109" />
+          <entry key="JSON" value="8" />
+          <entry key="JavaScript" value="83" />
+          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="TypeScript" value="354" />
+          <entry key="tsconfig" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="Angular2LanguageService" value="8" />
+          <entry key="Angular2LanguageService" value="16" />
           <entry key="TypeScriptServerServiceImpl" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.11" value="1" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.8" value="2" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.open.time.17" value="2" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="4" />
+          <entry key="project.open.time.8" value="3" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="ReviewSchema" value="890" />
+          <entry key="ReviewSchema" value="1038" />
           <entry key="css" value="1313" />
-          <entry key="html" value="1623" />
-          <entry key="js" value="8453" />
+          <entry key="html" value="1813" />
+          <entry key="js" value="8515" />
           <entry key="json" value="173" />
-          <entry key="ts" value="5827" />
+          <entry key="ts" value="6716" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="1313" />
-          <entry key="HTML" value="1623" />
+          <entry key="HTML" value="1813" />
           <entry key="JSON" value="173" />
-          <entry key="JavaScript" value="9343" />
-          <entry key="TypeScript" value="5827" />
+          <entry key="JavaScript" value="9553" />
+          <entry key="TypeScript" value="6716" />
         </counts>
       </usages-collector>
     </session>
@@ -169,109 +178,87 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/add-company/add-company.component.html">
+        <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/profile/profile.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="41" />
+            <state relative-caret-position="255">
+              <caret line="15" column="84" selection-start-line="15" selection-start-column="84" selection-end-line="15" selection-end-column="84" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/add-company/add-company.component.spec.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#73#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/add-company/add-company.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="48" column="14" lean-forward="true" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.spec.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#73#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="43" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#62#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/front-page/front-page.component.ts">
+        <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/profile/profile.component.spec.ts">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/review-list/review-list.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/login/login.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="17" column="50" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="50" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/sign-up/sign-up.component.ts">
+        <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/profile/profile.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="681">
-              <caret line="86" column="3" lean-forward="true" selection-start-line="86" selection-start-column="3" selection-end-line="86" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-199">
+              <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/services/company.service.ts">
+        <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/add-review/add-review.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="266">
+              <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/services/reviewService.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/services/auth.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="39" column="37" lean-forward="true" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Backend/routes/review.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="59" column="2" selection-start-line="59" selection-start-column="2" selection-end-line="59" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/services/auth.guard.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Backend/SchemaFolder/ReviewSchema">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Backend/SchemaFolder/UserSchema.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -310,11 +297,9 @@
         <option value="$PROJECT_DIR$/TrustPilot/src/index.html" />
         <option value="$PROJECT_DIR$/Backend/package.json" />
         <option value="$PROJECT_DIR$/Backend/config/database.js" />
-        <option value="$PROJECT_DIR$/Backend/SchemaFolder/UserSchema.js" />
         <option value="$PROJECT_DIR$/Backend/config/passport.js" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/add-company/add-company.component.css" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/navigation-bar/navigation-bar.component.css" />
-        <option value="$PROJECT_DIR$/TrustPilot/src/app/app.model.ts" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/services/ValidateService.ts" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/sign-up/sign-up.component.html" />
@@ -327,23 +312,16 @@
         <option value="$PROJECT_DIR$/Backend/server.js" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/services/auth.guard.ts" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/navigation-bar/navigation-bar.component.ts" />
-        <option value="$PROJECT_DIR$/TrustPilot/src/app/services/company.service.ts" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/services/auth.service.ts" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/add-review/add-review.component.html" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/add-review/add-review.component.ts" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/services/validateService.ts" />
-        <option value="$PROJECT_DIR$/TrustPilot/src/app/profile/profile.component.html" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/profile/profile.component.css" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/navigation-bar/navigation-bar.component.html" />
-        <option value="$PROJECT_DIR$/TrustPilot/src/app/services/reviewService.ts" />
-        <option value="$PROJECT_DIR$/Backend/routes/review.js" />
         <option value="$PROJECT_DIR$/Backend/routes/users.js" />
-        <option value="$PROJECT_DIR$/TrustPilot/src/app/review-list/review-list.component.html" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/review-list/review-list.component.ts" />
-        <option value="$PROJECT_DIR$/TrustPilot/src/app/profile/profile.component.ts" />
         <option value="$PROJECT_DIR$/Backend/routes/company.js" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.html" />
-        <option value="$PROJECT_DIR$/Backend/SchemaFolder/ReviewSchema" />
         <option value="$PROJECT_DIR$/TrustPilot/src/environments/environment.ts" />
         <option value="$PROJECT_DIR$/TrustPilot/src/environments/environment.prod.ts" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/app.module.ts" />
@@ -351,6 +329,15 @@
         <option value="$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.ts" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/login/login.component.ts" />
         <option value="$PROJECT_DIR$/TrustPilot/src/app/sign-up/sign-up.component.ts" />
+        <option value="$PROJECT_DIR$/TrustPilot/src/app/review-list/review-list.component.html" />
+        <option value="$PROJECT_DIR$/TrustPilot/src/app/app.model.ts" />
+        <option value="$PROJECT_DIR$/TrustPilot/src/app/services/company.service.ts" />
+        <option value="$PROJECT_DIR$/Backend/SchemaFolder/UserSchema.js" />
+        <option value="$PROJECT_DIR$/TrustPilot/src/app/profile/profile.component.html" />
+        <option value="$PROJECT_DIR$/TrustPilot/src/app/services/reviewService.ts" />
+        <option value="$PROJECT_DIR$/Backend/routes/review.js" />
+        <option value="$PROJECT_DIR$/Backend/SchemaFolder/ReviewSchema" />
+        <option value="$PROJECT_DIR$/TrustPilot/src/app/profile/profile.component.ts" />
       </list>
     </option>
   </component>
@@ -371,16 +358,16 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-7" />
+    <option name="width" value="1934" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -391,6 +378,23 @@
             <path>
               <item name="Distribution-Projekt" type="b2602c69:ProjectViewProjectNode" />
               <item name="Distribution-Projekt" type="462c0819:PsiDirectoryNode" />
+              <item name="Backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Distribution-Projekt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Distribution-Projekt" type="462c0819:PsiDirectoryNode" />
+              <item name="Backend" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Distribution-Projekt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Distribution-Projekt" type="462c0819:PsiDirectoryNode" />
+              <item name="Backend" type="462c0819:PsiDirectoryNode" />
+              <item name="SchemaFolder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Distribution-Projekt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Distribution-Projekt" type="462c0819:PsiDirectoryNode" />
               <item name="TrustPilot" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -405,14 +409,6 @@
               <item name="TrustPilot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Distribution-Projekt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Distribution-Projekt" type="462c0819:PsiDirectoryNode" />
-              <item name="TrustPilot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="add-company" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Distribution-Projekt" type="b2602c69:ProjectViewProjectNode" />
@@ -421,22 +417,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="add-review" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Distribution-Projekt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Distribution-Projekt" type="462c0819:PsiDirectoryNode" />
-              <item name="TrustPilot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="company-list" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Distribution-Projekt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Distribution-Projekt" type="462c0819:PsiDirectoryNode" />
-              <item name="TrustPilot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="front-page" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Distribution-Projekt" type="b2602c69:ProjectViewProjectNode" />
@@ -460,7 +440,7 @@
               <item name="TrustPilot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="review-list" type="462c0819:PsiDirectoryNode" />
+              <item name="profile" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Distribution-Projekt" type="b2602c69:ProjectViewProjectNode" />
@@ -478,18 +458,10 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="sign-up" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Distribution-Projekt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Distribution-Projekt" type="462c0819:PsiDirectoryNode" />
-              <item name="TrustPilot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="environments" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -546,11 +518,19 @@
       <workItem from="1544981263199" duration="42637000" />
       <workItem from="1545130347491" duration="15442000" />
       <workItem from="1545161374827" duration="5642000" />
+      <workItem from="1546015730274" duration="992000" />
+      <workItem from="1546423983878" duration="636000" />
+      <workItem from="1546503063617" duration="356000" />
+      <workItem from="1547210423031" duration="1543000" />
+      <workItem from="1547212588689" duration="2294000" />
+      <workItem from="1547493034954" duration="1974000" />
+      <workItem from="1548244753552" duration="1731000" />
+      <workItem from="1548761850920" duration="7276000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175729000" />
+    <option name="totallyTimeSpent" value="192539000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -565,7 +545,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13382508" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13224447" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -578,7 +558,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.329718" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.82031906" visible="true" weight="0.2646421" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.82031906" visible="true" weight="0.26030368" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -639,232 +619,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/services/database.service.spec.ts" />
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/login/login.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/services/auth.guard.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/front-page/front-page.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/add-review/add-review.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/add-company/add-company.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/services/registerService.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/add-review/add-review.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/sign-up/sign-up.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/sign-up/sign-up.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/sign-up/sign-up.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/services/auth.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/services/validateService.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/profile/profile.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/profile/profile.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/review-list/review-list.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/front-page/front-page.component.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/login/login.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/profile/profile.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/review-list/review-list.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/services/reviewService.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/add-review/add-review.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/navigation-bar/navigation-bar.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="146" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/navigation-bar/navigation-bar.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/review-list/review-list.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/profile/profile.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/navigation-bar/navigation-bar.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/add-review/add-review.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/routes/review.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="41" column="23" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/routes/company.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="834">
-          <caret line="70" column="7" selection-start-line="70" selection-start-column="7" selection-end-line="70" selection-end-column="7" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-186">
-          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/SchemaFolder/ReviewSchema">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -879,39 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/app.model.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -923,74 +651,275 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/add-company/add-company.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/add-company/add-company.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="48" column="14" lean-forward="true" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="748">
+          <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="43" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/front-page/front-page.component.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/login/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="50" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/sign-up/sign-up.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/routes/company.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="64" column="7" selection-start-line="64" selection-start-column="7" selection-end-line="64" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/review-list/review-list.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/review-list/review-list.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/services/registerService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/services/validateService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-115">
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/login/login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/out-tsc/app/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/add-company/add-company.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/.editorconfig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/review-list/review-list.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/navigation-bar/navigation-bar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="58" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/review-list/review-list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/navigation-bar/navigation-bar.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/navigation-bar/navigation-bar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/services/company.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+        <state relative-caret-position="51">
+          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/review-list/review-list.component.ts">
+    <entry file="file://$PROJECT_DIR$/TrustPilot/out-tsc/app/environments/environment.prod.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/out-tsc/app/environments/environment.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+        <state>
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/company-list/company-list.component.ts">
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/app.model.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="43" selection-end-column="9" />
+        <state relative-caret-position="187">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/add-review/add-review.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="59" lean-forward="true" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="e#0#62#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/login/login.component.ts">
+    <entry file="file://$PROJECT_DIR$/Backend/routes/users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="17" column="50" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="374">
+          <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/sign-up/sign-up.component.ts">
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/add-review/add-review.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/add-review/add-review.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
-          <caret line="86" column="3" lean-forward="true" selection-start-line="86" selection-start-column="3" selection-end-line="86" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="266">
+          <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/services/reviewService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/services/auth.guard.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/services/auth.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="39" column="37" lean-forward="true" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/SchemaFolder/UserSchema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/SchemaFolder/ReviewSchema">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/routes/review.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="59" column="2" selection-start-line="59" selection-start-column="2" selection-end-line="59" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/profile/profile.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="84" selection-start-line="15" selection-start-column="84" selection-end-line="15" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/profile/profile.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustPilot/src/app/profile/profile.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-199">
+          <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
         </state>
       </provider>
     </entry>

@@ -13,6 +13,8 @@
       <p></p>
       <b>Review:</b>  {{review.review}}
       <p></p>
+      <button *ngIf=isCurrentUser() type="button" (click)=onRemoveSubmit(review._id)>Remove</button>
+      <p></p>
     </li>
   </ul>
 

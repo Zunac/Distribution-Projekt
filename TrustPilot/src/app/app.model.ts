@@ -9,6 +9,7 @@ export interface Company{
 }
 
 export interface Review{
+  _id?: string;
   title?: string;
   username?: string;
   companyname?: string;
