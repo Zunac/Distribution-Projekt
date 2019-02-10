@@ -1,14 +1,15 @@
 ## How to run:
 In order to run the website, in the commandline select the path of the project (under the folder name 'TrustPilot).
-In the commandline, run the following commands;
 
+In the commandline, run the following commands;
+´´´
 npm install --save firebase
 npm install --save angularfire2 
-
+´´´
 And once these two files have been installed, the server can be run by running the following command (still in the path previously specified):
-
+´´´
 ng serve
-
+´´´
 The website is run on the localhost:4200. 
 
 ## What is the website?
